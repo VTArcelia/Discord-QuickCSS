@@ -28,7 +28,7 @@ div [aria-label="Start Video Call"] {
 }
 
 
-/* Remove Threads and the invisible button that persists */
+/* Remove Threads and the invisible button that persists (message ribbon ver. still persists) */
 div [aria-label="Threads"] {
  display: none !important;
 }
