@@ -1,0 +1,150 @@
+/* Remove Nitro Shop Effects */
+[class^=avatarDecoration_] {
+ display: none;
+}
+[class^=profileEffects_] {
+ display: none;
+}
+
+
+/* Remove Emoji Reccomendations in Right Click Menu */
+[class^=wrapper__2e846] {
+    display: none;
+}
+
+
+/* Remove New "Attachment" Links */
+[class^=attachmentLink] {
+ display: none;
+}
+
+
+/* Remove Call Icons in DM so no accidental presses */
+div [aria-label="Start Voice Call"] {
+ display: none !important;
+}
+div [aria-label="Start Video Call"] {
+ display: none !important;
+}
+
+
+/* Remove Threads and the invisible button that persists */
+div [aria-label="Threads"] {
+ display: none !important;
+}
+[class*=topic__16ae3] {
+ display:none;
+}
+
+
+/* Remove Help Icon */
+div [aria-label="Help"] {
+ display: none !important;
+}
+[class^=altText__6dd8b] {
+ display: none;
+}
+
+
+/* Remove Nitro Gift Icon (Winter and Default currently) */
+div [aria-label="Send a gift"] {
+ display: none;
+}
+div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
+ display: none;
+}
+
+
+/* Fix Discord not showing full img (doesn't work if discord link that has expiration details attached) */
+[class^="messageAttachment_"] [class^="lazyImg_"] {
+  object-fit: contain !important;
+}
+
+
+/* Custom Home Icon */
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
+    background: url("https://i.postimg.cc/BnmrSQW7/Laffey.png") no-repeat center !important;
+    background-size: cover !important;
+}
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
+    display: none;
+}
+
+
+/* Hides the Billing Settings stuff from discord settings */
+.header_f72511:has(+ .premiumTab__57bdc) /* Payment Settings */,
+.premiumTab__57bdc /* Nitro */,
+.premiumTab__57bdc + .item__48dda /* Server Boost */,
+.premiumTab__57bdc + .item__48dda + .item__48dda /* Subscriptions */,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda /* Gift Inventory */,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda /* Billing */,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_fdbcfd  /* Divider */ {
+  display: none;
+}
+
+/* Hide Shop and Nitro store in DMs */
+a[href="/store"] { display: none; }
+a[href="/shop"] { display: none; }
+
+
+/* Make My Mention Different From Other Mentions without affecting #CHANNEL */
+.theme-dark .mentioned__58017 .mention {
+    color: rgb(255, 134, 255) !important;
+    }
+.theme-dark .mention {
+  color: rgb(15, 240, 250);
+  background-color: transparent;
+}
+/* Better Mentions Pulse (after fix) */
+.mentioned__58017 .mention {
+  background-color: transparent !important;
+}
+.theme-dark .mentioned__58017 .mention {
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(255, 134, 255);
+  animation: pulse 1.6s infinite;
+}
+.cozy_f5c119 .messageContent__21e69
+{
+  padding-top: 1px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 2px 2px transparent;
+  }
+  70% { 
+      -webkit-box-shadow: 0 0 2px 2px rgb(255, 134, 255);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgb(255, 134, 255);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  70% { 
+      -moz-box-shadow: 0 0 2px 2px rgb(255, 134, 255);
+      box-shadow: 0 0 2px 2px rgb(255, 134, 255);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 transparent;
+      box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* Replace "Discord" text in title bar */
+.titleBar__01af6:not(.typeMacOS-3V4xXE)::after {
+  content: "Enrop";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: rgb(170, 170, 170);
+  display: block;
+  height: 16px;
+  width: fit-content;
+  pointer-events: none;
+  font-size: 14px;
+}
+.wordmark__0d178{display: none;}
