@@ -1,23 +1,7 @@
-/* Remove Nitro Shop Effects */
-[class^=avatarDecoration_] {
- display: none;
-}
-[class^=profileEffects_] {
- display: none;
-}
-
-
-/* Remove Emoji Reccomendations in Right Click Menu */
+/* Remove Emoji Recommendations in Right Click Menu */
 [class^=wrapper__2e846] {
     display: none;
 }
-
-
-/* Remove New "Attachment" Links */
-[class^=attachmentLink] {
- display: none;
-}
-
 
 /* Remove Call Icons in DM so no accidental presses */
 div [aria-label="Start Voice Call"] {
@@ -52,12 +36,6 @@ div [aria-label="Send a gift"] {
 }
 div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
  display: none;
-}
-
-
-/* Fix Discord not showing full img (doesn't work if discord link that has expiration details attached) */
-[class^="messageAttachment_"] [class^="lazyImg_"] {
-  object-fit: contain !important;
 }
 
 
