@@ -41,7 +41,7 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
 
 /* Custom Home Icon */
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
-    background: url("https://i.postimg.cc/BnmrSQW7/Laffey.png") no-repeat center !important;
+    background: url("https://i.postimg.cc/x19dfMkz/image.png") no-repeat center !important;
     background-size: cover !important;
 }
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
@@ -60,57 +60,11 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
   display: none;
 }
 
+
 /* Hide Shop and Nitro store in DMs */
 a[href="/store"] { display: none; }
 a[href="/shop"] { display: none; }
 
-
-/* Make My Mention Different From Other Mentions without affecting #CHANNEL */
-.theme-dark .mentioned__58017 .mention {
-    color: rgb(255, 134, 255) !important;
-    }
-.theme-dark .mention {
-  color: rgb(15, 240, 250);
-  background-color: transparent;
-}
-/* Better Mentions Pulse (after fix) */
-.mentioned__58017 .mention {
-  background-color: transparent !important;
-}
-.theme-dark .mentioned__58017 .mention {
-  cursor: pointer;
-  box-shadow: 0 0 0 rgb(255, 134, 255);
-  animation: pulse 1.6s infinite;
-}
-.cozy_f5c119 .messageContent__21e69
-{
-  padding-top: 1px;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 2px 2px transparent;
-  }
-  70% { 
-      -webkit-box-shadow: 0 0 2px 2px rgb(255, 134, 255);
-  }
-  100% {
-      -webkit-box-shadow: 0 0 0 0 rgb(255, 134, 255);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent;
-  }
-  70% { 
-      -moz-box-shadow: 0 0 2px 2px rgb(255, 134, 255);
-      box-shadow: 0 0 2px 2px rgb(255, 134, 255);
-  }
-  100% {
-      -moz-box-shadow: 0 0 0 0 transparent;
-      box-shadow: 0 0 0 0 transparent;
-  }
-}
 
 /* Replace "Discord" text in title bar */
 .titleBar__01af6:not(.typeMacOS-3V4xXE)::after {
@@ -126,3 +80,25 @@ a[href="/shop"] { display: none; }
   font-size: 14px;
 }
 .wordmark__0d178{display: none;}
+
+
+.sidebarRegion__60457 {/*Left*/
+max-width: fit-content !important; 
+}
+.contentColumn_dc7d36 { /*Right*/
+    max-width: unset;
+}
+.standardSidebarView__1129a { /*Top*/
+top: 0px !important;
+}
+.sidebar__9e3e2 { /*Sidebar Top*/
+padding-top: 2em;
+}
+.avatar__6c108 { /*Fix Avatar*/
+top: 215px;
+}
+.bannerSVGWrapper__3e7b0>mask>circle { /*fix the background circle*/
+    r: 19.701;
+    cy: 109;
+    cx: 27;
+}
