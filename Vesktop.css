@@ -1,9 +1,18 @@
-/* Remove Emoji Recommendations in Right Click Menu */
-[class^=wrapper__2e846] {
-    display: none;
+/* Block List */
+[data-author-id=""] {display: none;}
+/* Favorites */
+[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {font-size: 0;}
+[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;content: "Silly " url("https://i.postimg.cc/KzhpH219/Liked.png")}
+/* Displayed Image Next to Favorites can be Removed, same with line below */
+/* Remove Verified Icon from favorites */
+[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1:after {
+    content: var(--twitter-verified);
+    display: none
 }
 
-/* Remove Call Icons in DM so no accidental presses */
+/* Removed all other notes because I really don't care about that shit, the top most is only what I mess with now */
+
+
 div [aria-label="Start Voice Call"] {
  display: none !important;
 }
@@ -12,16 +21,7 @@ div [aria-label="Start Video Call"] {
 }
 
 
-/* Remove Threads and the invisible button that persists (message ribbon ver. still persists) */
-div [aria-label="Threads"] {
- display: none !important;
-}
-[class*=topic__16ae3] {
- display:none;
-}
 
-
-/* Remove Help Icon */
 div [aria-label="Help"] {
  display: none !important;
 }
@@ -30,7 +30,7 @@ div [aria-label="Help"] {
 }
 
 
-/* Remove Nitro Gift Icon (Winter and Default currently) */
+
 div [aria-label="Send a gift"] {
  display: none;
 }
@@ -39,7 +39,7 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
 }
 
 
-/* Custom Home Icon */
+
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
     background: url("https://i.postimg.cc/x19dfMkz/image.png") no-repeat center !important;
     background-size: cover !important;
@@ -49,26 +49,26 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
 }
 
 
-/* Hides the Billing Settings stuff from discord settings */
-.header_f72511:has(+ .premiumTab__57bdc) /* Payment Settings */,
-.premiumTab__57bdc /* Nitro */,
-.premiumTab__57bdc + .item__48dda /* Server Boost */,
-.premiumTab__57bdc + .item__48dda + .item__48dda /* Subscriptions */,
-.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda /* Gift Inventory */,
-.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda /* Billing */,
-.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_fdbcfd  /* Divider */ {
+
+.header_f72511:has(+ .premiumTab__57bdc) ,
+.premiumTab__57bdc ,
+.premiumTab__57bdc + .item__48dda ,
+.premiumTab__57bdc + .item__48dda + .item__48dda ,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda ,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda ,
+.premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_fdbcfd   {
   display: none;
 }
 
 
-/* Hide Shop and Nitro store in DMs */
 a[href="/store"] { display: none; }
 a[href="/shop"] { display: none; }
 
 
-/* Replace "Discord" text in title bar */
+
 .titleBar__01af6:not(.typeMacOS-3V4xXE)::after {
   content: "Enrop";
+  scale: 1.2;
   position: absolute;
   top: 5px;
   left: 10px;
@@ -82,23 +82,131 @@ a[href="/shop"] { display: none; }
 .wordmark__0d178{display: none;}
 
 
-.sidebarRegion__60457 {/*Left*/
+.sidebarRegion__60457 {
 max-width: fit-content !important; 
 }
-.contentColumn_dc7d36 { /*Right*/
+.contentColumn_dc7d36 { 
     max-width: unset;
 }
-.standardSidebarView__1129a { /*Top*/
+.standardSidebarView__1129a {
 top: 0px !important;
 }
-.sidebar__9e3e2 { /*Sidebar Top*/
+.sidebar__9e3e2 { 
 padding-top: 2em;
 }
-.avatar__6c108 { /*Fix Avatar*/
+.avatar__6c108 { 
 top: 215px;
 }
-.bannerSVGWrapper__3e7b0>mask>circle { /*fix the background circle*/
+.bannerSVGWrapper__3e7b0>mask>circle { 
     r: 19.701;
     cy: 109;
     cx: 27;
 }
+
+
+.text-xs-semibold_a3a2b4.barText__1a44f {font-size: 0px;}
+.text-xs-semibold_a3a2b4.barText__1a44f:before {font-size:12px; content:  "new shit that you don't care about!"; position: absolute; top: 4px;}
+.bar__004d9 {width: 5.3em;height:3.9em} 
+
+::selection {background-color: rgba(102, 51, 153, 0.5);color: white;}
+
+
+[href*="catbox"], [href*="tenor"] {
+    display: none;
+}
+
+
+
+:root {
+    --twitter-verified: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/15px-Twitter_Verified_Badge.svg.png);
+}
+.username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1:after {
+    content: var(--twitter-verified);
+    filter:hue-rotate(155deg);
+    display: flexbox;
+    padding-left: 5px;}
+.vc-spotify-button-row {
+    opacity: 0%;
+    transition: ease 0.5s;
+    gap: 6.5rem !important;
+}
+
+
+
+
+.vc-spotify-button-row:hover {
+    opacity: 100%;
+    gap: 0px !important;
+}
+
+
+
+.mentioned__58017:hover {
+    background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
+}
+
+:root {
+    --file-blur: 5px;
+}
+.imageWrapper_fd6587.imageZoom_ceab9d.clickable_dc48ac.lazyImgContainer__68fa8 img {
+    filter: blur(var(--file-blur));
+    transition: ease 0.45s;}
+.imageWrapper_fd6587.imageZoom_ceab9d.clickable_dc48ac.lazyImgContainer__68fa8:hover img {
+    filter: blur(0px);
+}
+.imageWrapper_fd6587:has(.cover__0b3cf.active_f0dd2f) {
+    filter: blur(var(--file-blur));
+    transition: ease 0.45s;
+    }
+.imageWrapper_fd6587:has(.cover__0b3cf.active_f0dd2f):hover {
+    filter: blur(0px);
+    }
+.imageWrapper_fd6587 > .clickableWrapper__64072 {
+    filter: blur(var(--file-blur));
+    transition: filter ease 0.45s;
+}
+.imageWrapper_fd6587:hover > .clickableWrapper__64072 {
+    filter: blur(0px);
+}
+.imageWrapper_fd6587:has([aria-label="Image"]) {
+    filter: blur(var(--file-blur));
+    transition: ease 0.45s;
+}
+.imageWrapper_fd6587:has([aria-label="Image"]):hover {
+    filter: blur(0px);
+}
+.embedWrapper_c143d9.embedFull__8dc21 img {
+    filter: blur(var(--file-blur));
+    transition: 0.45s ease;
+}
+.embedWrapper_c143d9.embedFull__8dc21:hover img {
+    filter: blur(0px);
+}
+[data-type="sticker"] {
+    filter: blur(var(--file-blur));
+    transition: 0.45s ease
+}
+[data-type="sticker"]:hover {
+    filter: blur(0px);
+}
+
+.avatarDecoration__14b3c {display: none;}
+.avatarDecoration_ae35e3 {display: none;}
+.profileEffects_fd33f6 {display: none;}
+.profilePanel__12596 {display: none;}
+[aria-label="Show User Profile"] {display: none;}
+[aria-label="Hide User Profile"] {display: none;}
+.welcomeCTA__927ef {display: none;}
+.roleIcon__59ca1.roleIcon_d491aa.clickable__08c77 {display: none !important;}
+.recentsIcon__3c4cf {display: none}
+[aria-label="Help"] {display: none;}
+[aria-label="Deafen"] {display: none !important;}
+.selectionGroup__36139 {display: none;}
+.presets__14d08, .header_a6f6dd, .themeTitle__23d07, .divider_a2339a.marginTop20_d88ee7 {display: none;}
+[aria-label="Clips"] {display: none;}
+[aria-label="Family Center"] {display: none;}
+[aria-label="Merch"] {display: none;}
+[data-tab-id="Hypesquad Online"] {display: none !important;}
+[data-tab-id="BLOCKED"] {display: none !important;}
+[data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
+
