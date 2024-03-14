@@ -1,16 +1,38 @@
 /* Block List */
 [data-author-id=""] {display: none;}
-/* Favorites */
+
+/* Liked Users, if you want custom usernames for all, then ignore example
+and just copy paste the entire section, doing so lets you change nicknames
+on a per user basis
+
+example : 
+[data-author-id="824922747423031359"], [data-author-id="12345123123"] .user etc etc
+*/
+
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {font-size: 0;}
-[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;content: "Silly " url("https://i.postimg.cc/KzhpH219/Liked.png")}
-/* Displayed Image Next to Favorites can be Removed, same with line below */
+[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;
+
+/* Custom name (add a space at end if using custom image) */
+    content: "Saori Joumae " 
+/* Custom Image next to name (removable) 15x15 ideally */
+    url("https://i.postimg.cc/KzhpH219/Liked.png")}
+
+
 /* Remove Verified Icon from favorites */
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1:after {
     content: var(--twitter-verified);
     display: none
 }
 
+/* File Blur */
+:root {
+    --file-blur: 5px;
+}
+
+
 /* Removed all other notes because I really don't care about that shit, the top most is only what I mess with now */
+
+
 
 
 div [aria-label="Start Voice Call"] {
@@ -145,9 +167,7 @@ top: 215px;
     background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
 }
 
-:root {
-    --file-blur: 5px;
-}
+
 .imageWrapper_fd6587.imageZoom_ceab9d.clickable_dc48ac.lazyImgContainer__68fa8 img {
     filter: blur(var(--file-blur));
     transition: ease 0.45s;}
