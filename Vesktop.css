@@ -13,7 +13,7 @@ example :
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;
 
 /* Custom name (add a space at end if using custom image) */
-    content: "Saori Joumae " 
+    content: "🌸 Saori Joumae " 
 /* Custom Image next to name (removable) 15x15 ideally */
     url("https://i.postimg.cc/KzhpH219/Liked.png")}
 
@@ -229,4 +229,66 @@ top: 215px;
 [data-tab-id="Hypesquad Online"] {display: none !important;}
 [data-tab-id="BLOCKED"] {display: none !important;}
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
+
+
+.ready__61f2f {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px !important;
+    height: 150px !important;
+}
+.container__4bde3 {
+    backdrop-filter: blur(48px);
+}
+.theme-dark .container__4bde3 {
+    background-color: rgb(0 0 0/60%);
+}
+.theme-light .container__4bde3 {
+    background-color: rgb(255 255 255/60%);
+}
+.tip__6e299 {
+    color: var(--header-primary);
+    font-size: 30px;
+    font-weight: 300;
+    opacity: .7;
+}
+.tipTitle_a7615c,
+.tip__6e299 {
+    width: fit-content !important;
+    line-height: unset !important;
+    max-width: 40vw;
+    font-family: var(--font-headline);
+    text-transform: none;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.text__32559 {
+    position: absolute;
+    top: 57px;
+    left: 35px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.problems__755eb {
+    z-index: +1;
+    width: fit-content;
+    padding-left: 35px;
+}
+.problemsText__046e8 {
+    color: var(--header-primary);
+}
+.tipTitle_a7615c {
+    font-size: 0;
+}
+.tipTitle_a7615c::after {
+    --var-loading-header: "Maidenless Activities...";
+    content: var(--var-loading-header);
+    color: var(--header-primary);
+    font-size: 22px;
+    font-weight: 300;
+    opacity: .5;
+}
+
+[class^="imageWrapper_"] img[class^="lazyImg"] { object-fit: contain !important;}
 
