@@ -26,9 +26,17 @@ example :
 
 /* File Blur */
 :root {
-    --file-blur: 5px;
+    --file-blur: 10px;
 }
 
+/* Home Icon */
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
+    background: url("https://i.postimg.cc/x19dfMkz/image.png") no-repeat center !important;
+    background-size: cover !important;
+}
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
+    display: none;
+}
 
 /* Removed all other notes because I really don't care about that shit, the top most is only what I mess with now */
 
@@ -62,13 +70,7 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
 
 
 
-.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
-    background: url("https://i.postimg.cc/x19dfMkz/image.png") no-repeat center !important;
-    background-size: cover !important;
-}
-.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
-    display: none;
-}
+
 
 
 
@@ -210,10 +212,7 @@ top: 215px;
     filter: blur(0px);
 }
 
-.avatarDecoration__14b3c {display: none;}
-.avatarDecoration_ae35e3 {display: none;}
-.profileEffects_fd33f6 {display: none;}
-.profilePanel__12596 {display: none;}
+
 [aria-label="Show User Profile"] {display: none;}
 [aria-label="Hide User Profile"] {display: none;}
 .welcomeCTA__927ef {display: none;}
