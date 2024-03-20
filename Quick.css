@@ -12,10 +12,12 @@ example :
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {font-size: 0;}
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;
 
-/* Custom name (add a space at end if using custom image) */
-    content: "🌸 Saori Joumae " 
-/* Custom Image next to name (removable) 15x15 ideally */
-    url("https://i.postimg.cc/KzhpH219/Liked.png")}
+/* Custom name (can use multiple images) */
+    
+    content: url("https://i.postimg.cc/KzhpH219/Liked.png")
+    " En (Saori Joumae) "
+    url("https://i.postimg.cc/KzhpH219/Liked.png")
+    }
 
 
 /* Remove Verified Icon from favorites */
@@ -212,8 +214,8 @@ top: 215px;
     filter: blur(0px);
 }
 
-/* .avatarDecoration__14b3c {display: none;} */
-/* .avatarDecoration_ae35e3 {display: none;} */
+.avatarDecoration__14b3c {display: none;}
+.avatarDecoration_ae35e3 {display: none;}
 /* .profileEffects_fd33f6 {display: none;} */
 /* .profilePanel__12596 {display: none;} */
 [aria-label="Show User Profile"] {display: none;}
