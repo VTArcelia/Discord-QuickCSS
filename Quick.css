@@ -212,8 +212,8 @@ top: 215px;
     filter: blur(0px);
 }
 
-.avatarDecoration__14b3c {display: none;}
-.avatarDecoration_ae35e3 {display: none;}
+/* .avatarDecoration__14b3c {display: none;} */
+/* .avatarDecoration_ae35e3 {display: none;} */
 /* .profileEffects_fd33f6 {display: none;} */
 /* .profilePanel__12596 {display: none;} */
 [aria-label="Show User Profile"] {display: none;}
@@ -306,20 +306,32 @@ top: 215px;
     content: "🔒"
 }
 
-.accountProfilePopoutWrapper_af829a {left: 708px; top: -100px;} /* default left: 708px; top: 50px; */
-.layerContainer_d5a653:has([class^="userPopoutOuter_"])
-{ backdrop-filter: blur(10px) !important; }
-.accountProfilePopoutWrapper_af829a {
-    animation: 0.25s ease-out slide;
+.layer_ad604d:has(.quickswitcher_a3d29a) {
+    justify-content: start;
 }
-
-@keyframes slide {
-    from {
-        transform: translate(0, -1600px);
-    }
-
-    to {
-        transform: translate(0, 0px);
-    }
+.quickswitcher_a3d29a {
+    background: none;
+    padding: 0;
 }
-
+.quickswitcher_a3d29a .scroller__52ae7 {
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    scrollbar-width: none;
+    padding: 8px !important;
+}
+.quickswitcher_a3d29a .input__848cd {
+    height: 50px;
+}
+.quickswitcher_a3d29a .input__848cd[value=""] {
+    border-radius: 8px;
+}
+.quickswitcher_a3d29a .input__848cd:not([value=""]) {
+    border-radius: 8px 8px 0 0;
+}
+.quickswitcher_a3d29a .input__848cd[value=""] + .scroller__52ae7,
+.quickswitcher_a3d29a .protip__84833 {
+    display: none;
+}
+.backdrop__7e89b:has(+ .layer_ad604d .quickswitcher_a3d29a) {
+    opacity: 0;
+}
