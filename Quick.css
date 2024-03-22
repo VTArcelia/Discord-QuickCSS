@@ -9,16 +9,19 @@ example :
 [data-author-id="824922747423031359"], [data-author-id="12345123123"] .user etc etc
 */
 
-[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {font-size: 0;}
+[data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {
+    font-size: 1; /* if uncommenting 24, change font size to 0 */
+    color: rgb(175, 238, 238);
+    }
+/* uncomment 24 for custom names (can use images) & finish by commenting this 
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;
-
-/* Custom name (can use multiple images) */
     
     content: url("https://i.postimg.cc/KzhpH219/Liked.png")
     " En (Saori Joumae) "
-    url("https://i.postimg.cc/KzhpH219/Liked.png")
+    url("https://i.postimg.cc/KzhpH219/Liked.png");
+    color: rgb(175, 238, 238)
     }
-
+*/
 
 /* Remove Verified Icon from favorites */
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1:after {
@@ -26,10 +29,6 @@ example :
     display: none
 }
 
-/* File Blur */
-:root {
-    --file-blur: 10px;
-}
 
 /* Home Icon */
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
@@ -160,59 +159,12 @@ top: 215px;
 
 
 
-.vc-spotify-button-row:hover {
-    opacity: 100%;
-    gap: 0px !important;
-}
-
-
 
 .mentioned__58017:hover {
     background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
 }
 
 
-.imageWrapper_fd6587.imageZoom_ceab9d.clickable_dc48ac.lazyImgContainer__68fa8 img {
-    filter: blur(var(--file-blur));
-    transition: ease 0.45s;}
-.imageWrapper_fd6587.imageZoom_ceab9d.clickable_dc48ac.lazyImgContainer__68fa8:hover img {
-    filter: blur(0px);
-}
-.imageWrapper_fd6587:has(.cover__0b3cf.active_f0dd2f) {
-    filter: blur(var(--file-blur));
-    transition: ease 0.45s;
-    }
-.imageWrapper_fd6587:has(.cover__0b3cf.active_f0dd2f):hover {
-    filter: blur(0px);
-    }
-.imageWrapper_fd6587 > .clickableWrapper__64072 {
-    filter: blur(var(--file-blur));
-    transition: filter ease 0.45s;
-}
-.imageWrapper_fd6587:hover > .clickableWrapper__64072 {
-    filter: blur(0px);
-}
-.imageWrapper_fd6587:has([aria-label="Image"]) {
-    filter: blur(var(--file-blur));
-    transition: ease 0.45s;
-}
-.imageWrapper_fd6587:has([aria-label="Image"]):hover {
-    filter: blur(0px);
-}
-.embedWrapper_c143d9.embedFull__8dc21 img {
-    filter: blur(var(--file-blur));
-    transition: 0.45s ease;
-}
-.embedWrapper_c143d9.embedFull__8dc21:hover img {
-    filter: blur(0px);
-}
-[data-type="sticker"] {
-    filter: blur(var(--file-blur));
-    transition: 0.45s ease
-}
-[data-type="sticker"]:hover {
-    filter: blur(0px);
-}
 
 .avatarDecoration__14b3c {display: none;}
 .avatarDecoration_ae35e3 {display: none;}
@@ -235,77 +187,11 @@ top: 215px;
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
 
 
-.ready__61f2f {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 150px !important;
-    height: 150px !important;
-}
-.container__4bde3 {
-    backdrop-filter: blur(48px);
-}
-.theme-dark .container__4bde3 {
-    background-color: rgb(0 0 0/60%);
-}
-.theme-light .container__4bde3 {
-    background-color: rgb(255 255 255/60%);
-}
-.tip__6e299 {
-    color: var(--header-primary);
-    font-size: 30px;
-    font-weight: 300;
-    opacity: .7;
-}
-.tipTitle_a7615c,
-.tip__6e299 {
-    width: fit-content !important;
-    line-height: unset !important;
-    max-width: 40vw;
-    font-family: var(--font-headline);
-    text-transform: none;
-    margin-bottom: 8px;
-    text-align: left;
-}
-.text__32559 {
-    position: absolute;
-    top: 57px;
-    left: 35px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.problems__755eb {
-    z-index: +1;
-    width: fit-content;
-    padding-left: 35px;
-}
-.problemsText__046e8 {
-    color: var(--header-primary);
-}
-.tipTitle_a7615c {
-    font-size: 0;
-}
-.tipTitle_a7615c::after {
-    --var-loading-header: "Maidenless Activities...";
-    content: var(--var-loading-header);
-    color: var(--header-primary);
-    font-size: 22px;
-    font-weight: 300;
-    opacity: .5;
-}
 
 [class^="imageWrapper_"] img[class^="lazyImg"] { object-fit: contain !important;}
 
-.nitroTopDividerContainer__4c8fd, premiumSectionDivider__8b7d8, .premiumHeader_f78f97 {
+.nitroTopDividerContainer__4c8fd, premiumSectionDivider__8b7d8, .premiumHeader_f78f97, .premiumEmoji__2dbd7 {
     display: none;
-}
-.premiumEmoji__2dbd7 {
-    background-color: #00000000;
-    filter: grayscale(100%);
-    filter: hue-rotate(300deg);
-}
-.premiumEmoji__2dbd7 .base__76a71 .autocompleteRowContent_ec13a5 .autocompleteRowContentPrimary__533b6 .autocompleteRowHeading_caef9d:before {
-    content: "🔒"
 }
 
 .layer_ad604d:has(.quickswitcher_a3d29a) {
