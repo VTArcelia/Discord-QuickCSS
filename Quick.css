@@ -1,35 +1,19 @@
 /* Block List */
 [data-author-id=""] {display: none;}
-
-/* Liked Users, if you want custom usernames for all, then ignore example
-and just copy paste the entire section, doing so lets you change nicknames
-on a per user basis
-
-example : 
-[data-author-id="824922747423031359"], [data-author-id="12345123123"] .user etc etc
-*/
-
+/* Liked Users */
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1 {
-    font-size: 1; /* if uncommenting 24, change font size to 0 */
-    color: rgb(175, 238, 238);
+    font-size: 1; 
+    color: #3498db;
     }
-/* uncomment 24 for custom names (can use images) & finish by commenting this 
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1::before {font-size: 1rem;
-    
-    content: url("https://i.postimg.cc/KzhpH219/Liked.png")
-    " En (Saori Joumae) "
-    url("https://i.postimg.cc/KzhpH219/Liked.png");
-    color: rgb(175, 238, 238)
+    content: url("https://i.postimg.cc/KzhpH219/Liked.png") 
+    " ";
+    color: #3498db;
     }
-*/
-
-/* Remove Verified Icon from favorites */
 [data-author-id="824922747423031359"] .username_d30d99.desaturateUserColors_b72bd3.clickable_d866f1:after {
     content: var(--twitter-verified);
     display: none
 }
-
-
 /* Home Icon */
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
     background: url("https://i.postimg.cc/x19dfMkz/image.png") no-repeat center !important;
@@ -38,43 +22,7 @@ example :
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
     display: none;
 }
-
-/* Removed all other notes because I really don't care about that shit, the top most is only what I mess with now */
-
-
-
-
-div [aria-label="Start Voice Call"] {
- display: none !important;
-}
-div [aria-label="Start Video Call"] {
- display: none !important;
-}
-
-
-
-div [aria-label="Help"] {
- display: none !important;
-}
-[class^=altText__6dd8b] {
- display: none;
-}
-
-
-
-div [aria-label="Send a gift"] {
- display: none;
-}
-div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
- display: none;
-}
-
-
-
-
-
-
-
+/* Random from this point on */
 .header_f72511:has(+ .premiumTab__57bdc) ,
 .premiumTab__57bdc ,
 .premiumTab__57bdc + .item__48dda ,
@@ -84,13 +32,6 @@ div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {
 .premiumTab__57bdc + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_fdbcfd   {
   display: none;
 }
-
-
-a[href="/store"] { display: none; }
-a[href="/shop"] { display: none; }
-
-
-
 .titleBar__01af6:not(.typeMacOS-3V4xXE)::after {
   content: "Enrop";
   scale: 1.2;
@@ -105,8 +46,6 @@ a[href="/shop"] { display: none; }
   font-size: 14px;
 }
 .wordmark__0d178{display: none;}
-
-
 .sidebarRegion__60457 {
 max-width: fit-content !important; 
 }
@@ -127,21 +66,10 @@ top: 215px;
     cy: 109;
     cx: 27;
 }
-
-
 .text-xs-semibold_a3a2b4.barText__1a44f {font-size: 0px;}
 .text-xs-semibold_a3a2b4.barText__1a44f:before {font-size:12px; content:  "new shit that you don't care about!"; position: absolute; top: 4px;}
 .bar__004d9 {width: 5.3em;height:3.9em} 
-
 ::selection {background-color: rgba(102, 51, 153, 0.5);color: white;}
-
-
-[href*="catbox"], [href*="tenor"] {
-    display: none;
-}
-
-
-
 :root {
     --twitter-verified: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/15px-Twitter_Verified_Badge.svg.png);
 }
@@ -155,45 +83,13 @@ top: 215px;
     transition: ease 0.5s;
     gap: 6.5rem !important;
 }
-
-
-
-
-
 .mentioned__58017:hover {
     background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
 }
-
-
-
-.avatarDecoration__14b3c {display: none;}
-.avatarDecoration_ae35e3 {display: none;}
-/* .profileEffects_fd33f6 {display: none;} */
-/* .profilePanel__12596 {display: none;} */
-[aria-label="Show User Profile"] {display: none;}
-[aria-label="Hide User Profile"] {display: none;}
-.welcomeCTA__927ef {display: none;}
-.roleIcon__59ca1.roleIcon_d491aa.clickable__08c77 {display: none !important;}
-.recentsIcon__3c4cf {display: none}
-[aria-label="Help"] {display: none;}
-[aria-label="Deafen"] {display: none !important;}
-.selectionGroup__36139 {display: none;}
-.presets__14d08, .header_a6f6dd, .themeTitle__23d07, .divider_a2339a.marginTop20_d88ee7 {display: none;}
-[aria-label="Clips"] {display: none;}
-[aria-label="Family Center"] {display: none;}
-[aria-label="Merch"] {display: none;}
-[data-tab-id="Hypesquad Online"] {display: none !important;}
-[data-tab-id="BLOCKED"] {display: none !important;}
-[data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
-
-
-
 [class^="imageWrapper_"] img[class^="lazyImg"] { object-fit: contain !important;}
-
 .nitroTopDividerContainer__4c8fd, premiumSectionDivider__8b7d8, .premiumHeader_f78f97, .premiumEmoji__2dbd7 {
     display: none;
 }
-
 .layer_ad604d:has(.quickswitcher_a3d29a) {
     justify-content: start;
 }
@@ -223,3 +119,33 @@ top: 215px;
 .backdrop__7e89b:has(+ .layer_ad604d .quickswitcher_a3d29a) {
     opacity: 0;
 }
+
+/* .avatarDecoration__14b3c {display: none;} */
+/* .avatarDecoration_ae35e3 {display: none;} */
+/* .profileEffects_fd33f6 {display: none;} */
+/* .profilePanel__12596 {display: none;} */
+[aria-label="Show User Profile"] {display: none;}
+[aria-label="Hide User Profile"] {display: none;}
+.welcomeCTA__927ef {display: none;}
+.roleIcon__59ca1.roleIcon_d491aa.clickable__08c77 {display: none !important;}
+.recentsIcon__3c4cf {display: none;}
+[aria-label="Help"] {display: none;}
+[aria-label="Deafen"] {display: none !important;}
+.selectionGroup__36139 {display: none;}
+.presets__14d08, .header_a6f6dd, .themeTitle__23d07, .divider_a2339a.marginTop20_d88ee7 {display: none;}
+[aria-label="Clips"] {display: none;}
+[aria-label="Family Center"] {display: none;}
+[aria-label="Merch"] {display: none;}
+[data-tab-id="Hypesquad Online"] {display: none !important;}
+[data-tab-id="BLOCKED"] {display: none !important;}
+[data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
+div [aria-label="Start Voice Call"] {display: none !important;}
+div [aria-label="Start Video Call"] {display: none !important;}
+div [aria-label="Help"] {display: none !important;}
+[class^=altText__6dd8b] {display: none;}
+div [aria-label="Send a gift"] {display: none;}
+div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {display: none;}
+a[href="/store"] {display: none;}
+a[href="/shop"] {display: none;}
+[href*="catbox"] {display: none;}
+[href*="tenor"] {display: none;}
