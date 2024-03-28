@@ -1,21 +1,17 @@
-includes blur by default on all images thats easily editable.
+# Updated for new Discord Classes 3/28/2024
 
-changes discord watermark
+changes discord watermark (on title bar)
 
 changes home icon
 
-"verified" logo on all names
-
 removes pointless discord shit
-
-spotify plugin changes
-
 
 removed almost all nitro features and upsells
 
-way to "block" users without actually doing so
+way to "block" users without actually doing so (aka have an annoying friend just removes their messages from chat until you clear it)
 
-and special settings to show friends you actually care for, by either A) custom name B) custom icon (20x20 idaelly)
+
+and special settings to show friends you actually care for, by either A) Custom Color B) Custom Name C) Custom Icon (20x20 ideally) 
 
 
 
