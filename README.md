@@ -17,3 +17,7 @@ and special settings to show friends you actually care for, by either A) Custom 
 
 
 check commits to see stuff that have been removed that you may or may not enjoy, typically its just extra things you can do, but some stuff has been removed that i no longer prefer having
+
+
+# MixPack theme credits (fixed for most recent discord update)
+https://github.com/Mixter213/Discord
