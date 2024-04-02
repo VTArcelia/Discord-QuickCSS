@@ -14,6 +14,11 @@
     content: var(--twitter-verified);
     display: none
 }
+/* Custom PFP (example) or just use USRPFP */
+/*
+.userAvatar_f45224[style*="824922747423031359"],.avatar__08316[src^="https://cdn.discordapp.com/avatars/824922747423031359"],.avatar__991e2[src^="https://cdn.discordapp.com/avatars/824922747423031359"],.avatar__777a6[src^="https://cdn.discordapp.com/avatars/824922747423031359"]{content:url(https://i.postimg.cc/GhnWVDCY/dreamingnemleria.png);background-image:none !important}
+*/
+
 /* @ to username + color (for every user) */
 .userTagUsernameBase__2bd24::before {
     content: "@";
@@ -176,3 +181,4 @@ a[href="/shop"] {display: none;}
 .name__27f04 { /* Category Name */
   text-align: center;
 }
+
