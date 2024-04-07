@@ -1,3 +1,10 @@
+@import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
+:root {
+    --channellist-width: 220px;
+    --channellist-header-height: 48px;
+}
+
+
 /* Block List */
 [data-author-id=""] {display: none;}
 /* Liked Users */
@@ -14,10 +21,6 @@
     content: var(--twitter-verified);
     display: none
 }
-/* Custom PFP (example) or just use USRPFP */
-/*
-.userAvatar_f45224[style*="824922747423031359"],.avatar__08316[src^="https://cdn.discordapp.com/avatars/824922747423031359"],.avatar__991e2[src^="https://cdn.discordapp.com/avatars/824922747423031359"],.avatar__777a6[src^="https://cdn.discordapp.com/avatars/824922747423031359"]{content:url(https://i.postimg.cc/GhnWVDCY/dreamingnemleria.png);background-image:none !important}
-*/
 
 /* @ to username + color (for every user) */
 .userTagUsernameBase__2bd24::before {
@@ -34,7 +37,7 @@
 }
 /* Home Icon */
 .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 {
-    background: url("https://i.postimg.cc/9FnW87yc/image.png") no-repeat center !important;
+    background: url("https://raw.githubusercontent.com/UserPFP/img/main/Avatars/8/824922747423031359.gif") no-repeat center !important;
     background-size: cover !important;
 }
 .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
@@ -182,3 +185,18 @@ a[href="/shop"] {display: none;}
   text-align: center;
 }
 
+.authedApp__71a52{max-height:32px;box-sizing:content-box;overflow:hidden;transition:max-height 1s}.authedApp__71a52:hover{max-height:100vh}
+
+/* uncomment if you use what it references
+:root { /* Transparent Theme config for https://s-k-y-l-i.github.io/discord-themes/Acrylic-Harmony.theme.css */
+    --var-opacity-option: 0.3;  /* Set's the BASE opacity (titlebar, and the server bar) */
+    --var-color-saturation: 1.8;/* Increase for more colorful appearance*/
+    --var-contrast: 1.2;          /* Increase for more contrast (darker shadows) */
+    --var-opacity-titlebar: 0.3; 
+    --var-opacity-left-sidebar: 0.25;
+    --var-opacity-bottom-input: 0.05;
+    --var-opacity-right-sidebar: 0.1;
+    --var-opacity-inner-messages: 0.3; 
+
+}
+*/
