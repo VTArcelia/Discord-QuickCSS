@@ -17,7 +17,7 @@
     " ";
     color: #039be5;
     }
-[data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456:after {
+[data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456::after {
     content: var(--twitter-verified);
     display: none
 }
@@ -43,7 +43,7 @@
 .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
     display: none;
 }
-/* Random from this point on */
+
 .titleBar__710b0:not(.typeMacOS_cacc59)::after {
   content: "Enrop";
   scale: 1.2;
@@ -57,6 +57,7 @@
   pointer-events: none;
   font-size: 14px;
 }
+
 .header__71a82:has(+ .premiumTab_ad0913) ,
 .premiumTab_ad0913 ,
 .premiumTab_ad0913 + .item__48dda ,
@@ -66,6 +67,7 @@
 .premiumTab_ad0913 + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_d14fb1   {
   display: none;
 }
+
 .wordmark__5b8c9{display: none;}
 .text-xs-semibold__767f1.barText__32a63 {font-size: 0px;}
 .text-xs-semibold__767f1.barText__32a63:before {font-size:12px; content:  "gross! new things."; position: absolute; top: 4px;}
@@ -80,9 +82,8 @@
     display: flexbox;
     padding-left: 5px;}
 .vc-spotify-button-row {
-    opacity: 0%;
-    transition: ease 0.5s;
-    gap: 6.5rem !important;
+    opacity: 35%;
+    gap: 0.5rem !important;
 }
 .mentioned_fa6fd2:hover {
     background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
@@ -150,9 +151,6 @@ a[href="/shop"] {display: none;}
 [href*="catbox"] {display: none;}
 [href*="tenor"] {display: none;}
 
-.bannerSVGWrapper__8a38c > mask {
-  display: none;
-}
 
 /* Category Bubble */
 :root {
@@ -185,18 +183,30 @@ a[href="/shop"] {display: none;}
   text-align: center;
 }
 
+
 .authedApp__71a52{max-height:32px;box-sizing:content-box;overflow:hidden;transition:max-height 1s}.authedApp__71a52:hover{max-height:100vh}
 
-/* uncomment if you use what it references
-:root { /* Transparent Theme config for https://s-k-y-l-i.github.io/discord-themes/Acrylic-Harmony.theme.css */
-    --var-opacity-option: 0.3;  /* Set's the BASE opacity (titlebar, and the server bar) */
-    --var-color-saturation: 1.8;/* Increase for more colorful appearance*/
-    --var-contrast: 1.2;          /* Increase for more contrast (darker shadows) */
-    --var-opacity-titlebar: 0.3; 
-    --var-opacity-left-sidebar: 0.25;
-    --var-opacity-bottom-input: 0.05;
-    --var-opacity-right-sidebar: 0.1;
-    --var-opacity-inner-messages: 0.3; 
-
+/* Transparent Polls */
+/* badge icon */
+div[class^=pollBadgeDefault] svg path {
+    fill: transparent !important;
 }
-*/
+/* badge text */
+div[class^="pollBadgeDefault"] div[class^="text"] {
+  color: transparent !important;
+}
+/* background */
+div[class*="pollContainer"] {
+  background-color: transparent !important;
+}
+/* answer bubble */
+div[class*="pollContainer"]  div[class^="answer"] {
+  background-color: transparent;
+}
+
+
+  /* transparent loading page */
+.container__827e6.fixClipping__84826{
+    background: 0 0;
+    backdrop-filter: blur(5px);
+}
