@@ -45,7 +45,7 @@
 }
 
 .titleBar__710b0:not(.typeMacOS_cacc59)::after {
-  content: "Enrop";
+  content: "Blanc.";
   scale: 1.2;
   position: absolute;
   top: 5px;
@@ -209,4 +209,15 @@ div[class*="pollContainer"]  div[class^="answer"] {
 .container__827e6.fixClipping__84826{
     background: 0 0;
     backdrop-filter: blur(5px);
+}
+
+foreignObject[mask*="url(#"] {
+    mask: none;
+}
+[class*="avatar"]{
+    border-radius: 0;
+}
+svg.Avatar__mask.mask_d5067d.Avatar__svg.svg_a6bf1c > rect,
+svg.Avatar__mask.mask_d5067d.Avatar__svg.svg_a6bf1c > circle {
+  display: none;
 }
