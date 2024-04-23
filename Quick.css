@@ -17,10 +17,6 @@
     " ";
     color: #039be5;
     }
-[data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456::after {
-    content: var(--twitter-verified);
-    display: none
-}
 
 /* @ to username + color (for every user) */
 .userTagUsernameBase__2bd24::before {
@@ -73,14 +69,6 @@
 .text-xs-semibold__767f1.barText__32a63:before {font-size:12px; content:  "gross! new things."; position: absolute; top: 4px;}
 .bar__004d9 {width: 5.3em;height:3.9em} 
 ::selection {background-color: rgba(102, 51, 153, 0.5);color: white;}
-:root {
-    --twitter-verified: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/15px-Twitter_Verified_Badge.svg.png);
-}
-.username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456:after {
-    content: var(--twitter-verified);
-    filter:hue-rotate(155deg);
-    display: flexbox;
-    padding-left: 5px;}
 .vc-spotify-button-row {
     opacity: 35%;
     gap: 0.5rem !important;
@@ -121,10 +109,7 @@
 .backdrop__1a911:has(+ .layer_c14d31 .quickswitcher_b5bb0a) {
     opacity: 0;
 }
-/* .avatarDecoration__8a0c2 {display: none;} */
-/* .avatarDecoration_cf681a {display: none;} */
-/* .profileEffects__9b664 {display: none;} */
-/* .profilePanel_e2cafe {display: none;} */
+
 [aria-label="Show User Profile"] {display: none;}
 [aria-label="Hide User Profile"] {display: none;}
 .welcomeCTA__82be6 {display: none;}
@@ -211,13 +196,25 @@ div[class*="pollContainer"]  div[class^="answer"] {
     backdrop-filter: blur(5px);
 }
 
-foreignObject[mask*="url(#"] {
-    mask: none;
+
+img.avatar__08316,
+foreignObject[mask*="url(#svg-mask-avatar-status-round-"],
+foreignObject[mask*="url(#"],
+foreignObject[mask*="url(#svg-mask-avatar-status-mobile-"],
+foreignObject[mask="url(#svg-mask-avatar-default)"],
+foreignObject[mask*="url(#uid_"],
+foreignObject[mask*="url(#:r2m:"],
+foreignObject[mask="url(#:rk:)"] {
+  mask: none !important;
+  border-radius: 10% !important;
 }
-[class*="avatar"]{
-    border-radius: 0;
-}
-svg.Avatar__mask.mask_d5067d.Avatar__svg.svg_a6bf1c > rect,
-svg.Avatar__mask.mask_d5067d.Avatar__svg.svg_a6bf1c > circle {
+
+/* No Quest Please */
+.questsCard__20ba2 {
   display: none;
+}
+
+/* Anti Fake Play Video Button */
+div[class="iconWrapper__7b0c6"] {
+  background-color: rgba(172, 110, 253, 0.774) 
 }
