@@ -1,13 +1,10 @@
 @import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
 :root {
-    --channellist-width: 220px;
+    --channellist-width: 190px;
     --channellist-header-height: 48px;
 }
 
-
-/* Block List */
-[data-author-id=""] {display: none;}
-/* Liked Users */
+/* Me */
 [data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456 {
     font-size: 1; 
     color: #039be5;
@@ -53,18 +50,8 @@
   pointer-events: none;
   font-size: 14px;
 }
-
-.header__71a82:has(+ .premiumTab_ad0913) ,
-.premiumTab_ad0913 ,
-.premiumTab_ad0913 + .item__48dda ,
-.premiumTab_ad0913 + .item__48dda + .item__48dda ,
-.premiumTab_ad0913 + .item__48dda + .item__48dda + .item__48dda ,
-.premiumTab_ad0913 + .item__48dda + .item__48dda + .item__48dda + .item__48dda ,
-.premiumTab_ad0913 + .item__48dda + .item__48dda + .item__48dda + .item__48dda + .separator_d14fb1   {
-  display: none;
-}
-
 .wordmark__5b8c9{display: none;}
+
 .text-xs-semibold__767f1.barText__32a63 {font-size: 0px;}
 .text-xs-semibold__767f1.barText__32a63:before {font-size:12px; content:  "gross! new things."; position: absolute; top: 4px;}
 .bar__004d9 {width: 5.3em;height:3.9em} 
@@ -119,23 +106,12 @@
 [aria-label="Deafen"] {display: none !important;}
 .selectionGroup_f2b958 {display: none;}
 .presets__4073b, .header__35d14, .themeTitle_ab0542, .divider__14bb6.marginTop20__7e0ad {display: none;}
-[aria-label="Clips"] {display: none;}
-[aria-label="Family Center"] {display: none;}
-[aria-label="Merch"] {display: none;}
-[data-tab-id="Hypesquad Online"] {display: none !important;}
-[data-tab-id="BLOCKED"] {display: none !important;}
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
 div [aria-label="Start Voice Call"] {display: none !important;}
 div [aria-label="Start Video Call"] {display: none !important;}
 div [aria-label="Help"] {display: none !important;}
-[class^=altText_a57338] {display: none;}
-div [aria-label="Send a gift"] {display: none;}
-div [aria-label="Send a personalized Nitro gift to spread holiday cheer!"] {display: none;}
-a[href="/store"] {display: none;}
-a[href="/shop"] {display: none;}
 [href*="catbox"] {display: none;}
 [href*="tenor"] {display: none;}
-
 
 /* Category Bubble */
 :root {
@@ -168,7 +144,6 @@ a[href="/shop"] {display: none;}
   text-align: center;
 }
 
-
 .authedApp__71a52{max-height:32px;box-sizing:content-box;overflow:hidden;transition:max-height 1s}.authedApp__71a52:hover{max-height:100vh}
 
 /* Transparent Polls */
@@ -196,19 +171,6 @@ div[class*="pollContainer"]  div[class^="answer"] {
     backdrop-filter: blur(5px);
 }
 
-
-img.avatar__08316,
-foreignObject[mask*="url(#svg-mask-avatar-status-round-"],
-foreignObject[mask*="url(#"],
-foreignObject[mask*="url(#svg-mask-avatar-status-mobile-"],
-foreignObject[mask="url(#svg-mask-avatar-default)"],
-foreignObject[mask*="url(#uid_"],
-foreignObject[mask*="url(#:r2m:"],
-foreignObject[mask="url(#:rk:)"] {
-  mask: none !important;
-  border-radius: 10% !important;
-}
-
 /* No Quest Please */
 .questsCard__20ba2 {
   display: none;
@@ -217,4 +179,9 @@ foreignObject[mask="url(#:rk:)"] {
 /* Anti Fake Play Video Button */
 div[class="iconWrapper__7b0c6"] {
   background-color: rgba(172, 110, 253, 0.774) 
+}
+
+/* Remove Reactions */
+.reactions_da5b2a {
+  display: none !important;
 }
