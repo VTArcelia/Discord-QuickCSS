@@ -1,4 +1,4 @@
-@import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
+ @import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
 :root {
     --channellist-width: 190px;
     --channellist-header-height: 48px;
@@ -29,11 +29,11 @@
     color: #039be5;
 }
 /* Home Icon */
-.wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 {
+# .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 {
     background: url("https://raw.githubusercontent.com/UserPFP/img/main/Avatars/8/824922747423031359.gif") no-repeat center !important;
     background-size: cover !important;
 }
-.wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
+# .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
     display: none;
 }
 
@@ -103,7 +103,6 @@
 .roleIcon__92480.roleIcon_b6fe3d.clickable__5ba8f {display: none !important;}
 .recentsIcon_a585d7 {display: none;}
 [aria-label="Help"] {display: none;}
-[aria-label="Deafen"] {display: none !important;}
 .selectionGroup_f2b958 {display: none;}
 .presets__4073b, .header__35d14, .themeTitle_ab0542, .divider__14bb6.marginTop20__7e0ad {display: none;}
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
@@ -184,4 +183,9 @@ div[class="iconWrapper__7b0c6"] {
 /* Remove Reactions */
 .reactions_da5b2a {
   display: none !important;
+}
+
+/* Remove Locked Chatbox */
+[class*=channelTextAreaDisabled] {
+    display: none!important;
 }
