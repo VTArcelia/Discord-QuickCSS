@@ -1,110 +1,23 @@
- @import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
+@import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
 :root {
     --channellist-width: 190px;
     --channellist-header-height: 48px;
 }
 
 /* Me */
-[data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456 {
-    font-size: 1; 
-    color: #039be5;
-    }
-[data-author-id="824922747423031359"] .username__0b0e7.desaturateUserColors_eb6bd2.clickable__09456::before {font-size: 1rem;
-    content: url("https://i.postimg.cc/02cLc1Rm/Liked.png") 
-    " ";
-    color: #039be5;
-    }
-
-/* @ to username + color (for every user) */
-.userTagUsernameBase__2bd24::before {
-    content: "@";
-}
-.userTagUsernameBase__2bd24{
-    color: #039be5;
-}
-.discriminator__9d9f2::before{
-    content: "@"
-}
-.discriminator__9d9f2{
-    color: #039be5;
-}
-/* Home Icon */
-# .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 {
-    background: url("https://raw.githubusercontent.com/UserPFP/img/main/Avatars/8/824922747423031359.gif") no-repeat center !important;
-    background-size: cover !important;
-}
-# .wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
-    display: none;
-}
-
-.titleBar__710b0:not(.typeMacOS_cacc59)::after {
-  content: "Blanc.";
-  scale: 1.2;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: rgb(170, 170, 170);
-  display: block;
-  height: 16px;
-  width: fit-content;
-  pointer-events: none;
-  font-size: 14px;
-}
-.wordmark__5b8c9{display: none;}
-
-.text-xs-semibold__767f1.barText__32a63 {font-size: 0px;}
-.text-xs-semibold__767f1.barText__32a63:before {font-size:12px; content:  "gross! new things."; position: absolute; top: 4px;}
-.bar__004d9 {width: 5.3em;height:3.9em} 
-::selection {background-color: rgba(102, 51, 153, 0.5);color: white;}
-.vc-spotify-button-row {
-    opacity: 35%;
-    gap: 0.5rem !important;
-}
-.mentioned_fa6fd2:hover {
-    background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
-}
-[class^="imageWrapper_"] img[class^="lazyImg"] { object-fit: contain !important;}
-.nitroTopDividerContainer_b829ac, premiumSectionDivider__2ed1a, .premiumHeader_f73c14, .premiumEmoji_d4ce86 {
-    display: none;
-}
-.layer_c14d31:has(.quickswitcher_b5bb0a) {
-    justify-content: start;
-}
-.quickswitcher_b5bb0a {
-    background: none;
-    padding: 0;
-}
-.quickswitcher_b5bb0a .scroller_d4b86c {
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    scrollbar-width: none;
-    padding: 8px !important;
-}
-.quickswitcher_b5bb0a .input__2a648 {
-    height: 50px;
-}
-.quickswitcher_b5bb0a .input__2a648[value=""] {
-    border-radius: 8px;
-}
-.quickswitcher_b5bb0a .input__2a648:not([value=""]) {
-    border-radius: 8px 8px 0 0;
-}
-.quickswitcher_b5bb0a .input__2a648[value=""] + .scroller_d4b86c,
-.quickswitcher_b5bb0a .protip__84833 {
-    display: none;
-}
-.backdrop__1a911:has(+ .layer_c14d31 .quickswitcher_b5bb0a) {
-    opacity: 0;
+[data-author-id="824922747423031359"] .username_ec86aa.desaturateUserColors_c7819f.clickable_ec86aa {
+  font-size: 1; 
+  color: #FF69B4;
 }
 
 [aria-label="Show User Profile"] {display: none;}
 [aria-label="Hide User Profile"] {display: none;}
-.welcomeCTA__82be6 {display: none;}
-.roleIcon__92480.roleIcon_b6fe3d.clickable__5ba8f {display: none !important;}
-.recentsIcon_a585d7 {display: none;}
+.welcomeCTA_f6dde0 {display: none;}
+.roleIcon_d5100b.roleIcon_ec86aa.clickable_d5100b {display: none !important;}
+.recentsIcon_ea0547 {display: none;}
 [aria-label="Help"] {display: none;}
-.selectionGroup_f2b958 {display: none;}
-.presets__4073b, .header__35d14, .themeTitle_ab0542, .divider__14bb6.marginTop20__7e0ad {display: none;}
+.selectionGroup_bde965 {display: none;}
+.presets_f45ea6, .header_f45ea6, .themeTitle_a614a7, .divider_b03b7f.marginTop20_f7730b {display: none;}
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
 div [aria-label="Start Voice Call"] {display: none !important;}
 div [aria-label="Start Video Call"] {display: none !important;}
@@ -112,80 +25,51 @@ div [aria-label="Help"] {display: none !important;}
 [href*="catbox"] {display: none;}
 [href*="tenor"] {display: none;}
 
-/* Category Bubble */
-:root {
-  --global-1: var(--main-color); /* Label */
-  --global-2: white; /* Font */
-}
-.containerDefault_e3b32b {
-  color: var(--global-2) !important;
-  background-color: var(--global-1);
-  border-radius: 25px;
-  padding: 0px;
-  margin: 2px 5px 1px;
-  text-align: center;
-}
-.addButton__184db { /* + Button */
-  color: white;
-  right: 5px;
-  position: absolute;
-}
-.icon__3aa8e { /* Collapse Arrow */
-  display: initial !important;
-  color: white;
-  margin-left: 5px !important;
-  transform: scale(1.5);
-}
-.collapsed_c227d2 .icon__3aa8e { /* Collapsed Arrow */
-  transform: rotate(-90deg) scale(1.5);
-}
-.name__27f04 { /* Category Name */
-  text-align: center;
-}
-
-.authedApp__71a52{max-height:32px;box-sizing:content-box;overflow:hidden;transition:max-height 1s}.authedApp__71a52:hover{max-height:100vh}
-
-/* Transparent Polls */
-/* badge icon */
-div[class^=pollBadgeDefault] svg path {
-    fill: transparent !important;
-}
-/* badge text */
-div[class^="pollBadgeDefault"] div[class^="text"] {
-  color: transparent !important;
-}
-/* background */
-div[class*="pollContainer"] {
-  background-color: transparent !important;
-}
-/* answer bubble */
-div[class*="pollContainer"]  div[class^="answer"] {
-  background-color: transparent;
-}
-
-
-  /* transparent loading page */
-.container__827e6.fixClipping__84826{
-    background: 0 0;
-    backdrop-filter: blur(5px);
-}
-
-/* No Quest Please */
-.questsCard__20ba2 {
-  display: none;
-}
-
 /* Anti Fake Play Video Button */
-div[class="iconWrapper__7b0c6"] {
+div[class="iconWrapper_b26897"] {
   background-color: rgba(172, 110, 253, 0.774) 
 }
-
-/* Remove Reactions */
-.reactions_da5b2a {
-  display: none !important;
+[class*=userPopoutOverlayBackground] {
+  max-height: 60vh;
 }
 
-/* Remove Locked Chatbox */
-[class*=channelTextAreaDisabled] {
-    display: none!important;
+/* bring back cursed webm videos */
+[class*="inlineMediaEmbed"] {
+  max-height: max-content !important;
+  max-width: max-content !important;
+}
+[class*="loadingOverlay"] {
+  aspect-ratio: unset !important;
+}
+[class*="imageWrapper"] {
+  aspect-ratio: unset !important;
+  width: max-content !important;
+  height: max-content !important;
+}
+[class*="oneByOneGrid"] {
+  max-height: max-content !important;
+}
+[class*="wrapperPaused"] {
+  width: max-content;
+  height: max-content;
+}
+
+
+/* Transparent Theme Config (remove if you arent using) */
+:root{
+    --var-opacity-option: 0.45;    /*   Acrylic opacity from 0 to 1    */
+    --var-color-saturation: 1.3; /* 0 to 999 where 1 is the default  */
+    --var-contrast: 1.6;          /*     Increase for darker blacks   */
+
+    --var-opacity-titlebar: 0.1;
+    --var-opacity-left-sidebar: 0.1;
+    --var-opacity-bottom-input: 0.28; /* Change the transparency of different elements */
+    --var-opacity-right-sidebar: 0.1;
+    --var-opacity-inner-messages: 0.15;
+
+    /* 
+    For example: 
+    0.1 --var-opacity-option with 99 --var-color-saturation
+    0.4 --var-opacity-option with 2.8 --var-color-saturation
+    0.6 --var-opacity-option with 1.8 --var-color-saturation        */
 }
