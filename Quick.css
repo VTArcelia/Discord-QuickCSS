@@ -6,10 +6,19 @@
 
 /* Me */
 [data-author-id="824922747423031359"] .username_ec86aa.desaturateUserColors_c7819f.clickable_ec86aa {
-  font-size: 1; 
-  color: #FF69B4;
+    font-size: 1; 
+    color: #FF69B4;
+    }
+
+/* Anti Fake Play Video Button */
+div[class="iconWrapper_b26897"] {
+  background-color: rgba(172, 110, 253, 0.774) 
+}
+[class*=userPopoutOverlayBackground] {
+  max-height: 60vh;
 }
 
+/* Remove mild annoyances */
 [aria-label="Show User Profile"] {display: none;}
 [aria-label="Hide User Profile"] {display: none;}
 .welcomeCTA_f6dde0 {display: none;}
@@ -25,15 +34,7 @@ div [aria-label="Help"] {display: none !important;}
 [href*="catbox"] {display: none;}
 [href*="tenor"] {display: none;}
 
-/* Anti Fake Play Video Button */
-div[class="iconWrapper_b26897"] {
-  background-color: rgba(172, 110, 253, 0.774) 
-}
-[class*=userPopoutOverlayBackground] {
-  max-height: 60vh;
-}
-
-/* bring back cursed webm videos */
+/* old funny webm videos */
 [class*="inlineMediaEmbed"] {
   max-height: max-content !important;
   max-width: max-content !important;
@@ -54,6 +55,10 @@ div[class="iconWrapper_b26897"] {
   height: max-content;
 }
 
+/* Un-Simplify Bios */
+[class^="descriptionClamp_"] {
+    display: block!important;
+}
 
 /* Transparent Theme Config (remove if you arent using) */
 :root{
@@ -66,10 +71,5 @@ div[class="iconWrapper_b26897"] {
     --var-opacity-bottom-input: 0.28; /* Change the transparency of different elements */
     --var-opacity-right-sidebar: 0.1;
     --var-opacity-inner-messages: 0.15;
-
-    /* 
-    For example: 
-    0.1 --var-opacity-option with 99 --var-color-saturation
-    0.4 --var-opacity-option with 2.8 --var-color-saturation
-    0.6 --var-opacity-option with 1.8 --var-color-saturation        */
 }
+
