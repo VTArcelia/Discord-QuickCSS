@@ -73,8 +73,3 @@ div [aria-label="Help"] {display: none !important;}
     --var-opacity-inner-messages: 0.15;
 }
 
-
-/* Clear (Remove if you aren't using) */
-:root{
-  --background-image: url('https://i.imgur.com/Fsl3o1O.jpeg');
-}
