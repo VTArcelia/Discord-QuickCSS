@@ -10,6 +10,18 @@
     color: #FF69B4;
     }
 
+/* Nav Bar / Discord Logo */
+.wordmark_a934d8 svg {
+ display: none; 
+}
+.wordmark_a934d8:before {
+	content: "Minato Aqua";
+	color: rgba(255, 255, 255, .7);
+	font-size: 14px;
+	text-shadow: 0 0 3px #000
+}
+
+
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_b26897"] {
   background-color: rgba(172, 110, 253, 0.774) 
@@ -72,4 +84,3 @@ div [aria-label="Help"] {display: none !important;}
     --var-opacity-right-sidebar: 0.1;
     --var-opacity-inner-messages: 0.15;
 }
-
