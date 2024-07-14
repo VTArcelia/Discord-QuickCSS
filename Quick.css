@@ -1,5 +1,5 @@
 /* Me */
-[data-author-id="824922747423031359"] .username_ec86aa.desaturateUserColors_c7819f.clickable_ec86aa {
+[data-author-id="824922747423031359"] .username_f9f2ca.desaturateUserColors_c7819f.clickable_f9f2ca {
  font-size: 1; 
  color: #FF69B4;
 }   
@@ -38,7 +38,7 @@
 }
 
 /* Anti Fake Play Video Button */
-div[class="iconWrapper_b26897"] {
+div[class="iconWrapper_e10160"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
 [class*=userPopoutOverlayBackground] {
@@ -54,7 +54,7 @@ div[class="iconWrapper_b26897"] {
 [aria-label="Show User Profile"] {display: none;}
 [aria-label="Hide User Profile"] {display: none;}
 .welcomeCTA_f6dde0 {display: none;}
-.roleIcon_d5100b.roleIcon_ec86aa.clickable_d5100b {display: none !important;}
+.roleIcon_d5100b.roleIcon_f9f2ca.clickable_d5100b {display: none !important;}
 .recentsIcon_ea0547 {display: none;}
 [aria-label="Help"] {display: none;}
 .selectionGroup_bde965 {display: none;}
@@ -236,7 +236,7 @@ div [aria-label="Help"] {display: none !important;}
   --boost-bar: none;
 }
 
-.container-ZMc96U {
+.container_fc4f04 {
   background: var(--ap-color-dp0) !important;
 }
 
