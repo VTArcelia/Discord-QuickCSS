@@ -65,41 +65,17 @@ div [aria-label="Start Video Call"] {display: none !important;}
 div [aria-label="Help"] {display: none !important;}
 [href*="catbox"] {display: none;}
 [href*="tenor"] {display: none;}
+a[href="/store"] {display: none;}
+a[href="/shop"] {display: none;}
 
-/* Add "@" before Usernames */
-[aria-label="User area"] [class^=nameTag_] [class^=hovered_]::before,
-[class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
-[class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
-:where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
-[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
-[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
-[class^=roundedRow_] [class="text-xs/normal_dc00ef"]::before,
-[class^=addMemberRow_] [class*=rowLabelSubText_]::before,
-[class^=memberRow_] [class*=userTag_]::before,
-[class^=emojiRow_] [class^=colorStandard_]::before,
-[class^=tiers_] [class^=user_] [class="text-xs/normal_dc00ef"]::before,
-[class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
-[class^=auditLog_] [class^=title_] [class^=defaultColor_]::before,
-[class^=bannedUser_] [class^=username_]::before,
-[class^=peopleListItem_] [class^=infoSpacing_]::before,
-[class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
- color: white;
- content: "@";
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1264371840286195904.png?size=64&quality=lossless);
+    transform: translate(-100%, -110%);
+    display: inline-block;
+    scale: 0.32;
 }
 
-/* Transparent */
-/*
-:root{
-    --var-opacity-option: 0.45;
-    --var-color-saturation: 1.3;
-    --var-contrast: 1.6;
-    --var-opacity-titlebar: 0.1;
-    --var-opacity-left-sidebar: 0.1;
-    --var-opacity-bottom-input: 0.28;
-    --var-opacity-right-sidebar: 0.1;
-    --var-opacity-inner-messages: 0.15;
-}
-*/
 
 /* Apatheia */
 /* Imports */
