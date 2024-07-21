@@ -1,41 +1,14 @@
-/* Me */
-[data-author-id="824922747423031359"] .username_f9f2ca.desaturateUserColors_c7819f.clickable_f9f2ca {
- font-size: 1; 
- color: #FF69B4;
-}   
-
 /* Nav Bar / Discord Logo */
 .wordmark_a934d8 svg {
  display: none; 
 }
 .wordmark_a934d8:before {
- content: "Baka Aqua";
+ content: "Baka";
  color: rgba(255, 255, 255, .7);
  font-size: 14px;
  text-shadow: 0 0 3px #000
 }
 
-/* custom chat bar input text  */
-.placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b {
- visibility: hidden;
-}
-.placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b::before {
- visibility: visible;
- content: "@Baka.Aqua";
-} 
-
-[class*=channelTextAreaDisabled] {
-    display: none!important;
-}
-
-/* or if it doesn't work like because of themes: */
-[class*=channelTextAreaDisabled] {
-    opacity: 0!important;
-    position: absolute!important;
-    height: 0px!important;
-    width: 0px!important;
-    z-index: 0!important;
-}
 
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_e10160"] {
