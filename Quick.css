@@ -9,7 +9,6 @@
  text-shadow: 0 0 3px #000
 }
 
-
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_e10160"] {
  background-color: rgba(172, 110, 253, 0.774) 
@@ -49,4 +48,5 @@ a[href="/shop"] {display: none;}
     scale: 0.32;
 }
 
-
+/* Attachment Links */
+.attachmentLink {display: none}
