@@ -8,6 +8,10 @@
 * @website https://purplewizard.space/
 */
 
+/* Main import*/
+@import url("https://blanc-dot.github.io/Discord-QuickCSS/WizardUI/base.css");
+
+/* Font I prefer*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap");
 
