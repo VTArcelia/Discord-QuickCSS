@@ -13,3 +13,4 @@ Recommended to use on any of the following [Vencord](https://github.com/Vendicat
 [fixicons.css is MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme), with updated classes
 
 
+[WizardUI by Goldenlys](https://github.com/GoldenLys/WizardUI/)
