@@ -11,3 +11,6 @@ Recommended to use on any of the following [Vencord](https://github.com/Vendicat
 [Apatheia (found on this archived repo)](https://github.com/AmadeusWM/dotfiles-hyprland/blob/main/dots/BetterDiscord/Apatheia.theme.css) is [ultra](https://github.com/TheCommieAxolotl/BetterDiscord-Stuff/blob/main/Ultra/Ultra.theme.css) but recolored.
 
 [fixicons.css is MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme), with updated classes
+
+
+[Partial "revive" of WizardUI by Goldenlys](https://github.com/GoldenLys/WizardUI/)
