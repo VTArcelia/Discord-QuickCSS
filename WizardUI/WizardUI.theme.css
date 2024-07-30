@@ -18,9 +18,6 @@
 /* This is an addon that moves the servers to the top with an horizontal width.*/
 @import url("https://blanc-dot.github.io/Discord-QuickCSS/WizardUI/PurpleServerList.css");
 
-/* Unadded features from the Original Repo for now as I am not using them, but will add soon */
-/* As far as I am aware none of these work currently except maybe the font */
-
 /* This is an addon that adds the Marianne font.
 @import url("https://goldenlys.github.io/WizardUI/addons/Marianne.css"); */
 
@@ -36,8 +33,10 @@
 /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.
 @import url("blanc-dot.github.io/Discord-QuickCSS/WizardUI/UserIsTyping.css"); */
 
+
+/* Unadded feature from the Original Repo for now as I am not using this, but will eventually add */
 /* This is an addon that recolors alot of elements in the app with the main theme color but you can even add an RGB animated effect if you change the number before the ".css" (with a maximum of 10 colors).
-@import url("blanc-dot.github.io/Discord-QuickCSS/WizardUI/EvenMoreColors/1.css"); */
+@import url("https://goldenlys.github.io/WizardUI/addons/EvenMoreColors/1.css"); */
 
 :root {
     /* MAIN VARIABLES */
