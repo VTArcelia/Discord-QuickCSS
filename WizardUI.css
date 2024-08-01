@@ -34,8 +34,8 @@
 
 :root {
     /* MAIN VARIABLES */
-    --AppName: "Baka";
-    --Watermark: "Aqua";
+    --AppName: "";
+    --Watermark: "";
     --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
     --Text: rgb(255, 255, 255);
     --logo: url(https://goldenlys.github.io/WizardUI/images/home.png);
