@@ -554,14 +554,14 @@ textarea,
 }
 
 .typeWindows_a934d8>.wordmark_a934d8:before {
-	content: "Baka Aqua";
+	content: "";
 	color: rgba(255, 255, 255, .7);
 	font-size: 14px;
 	text-shadow: 0 0 3px #000
 }
 
 .typeWindows_a934d8>.wordmark_a934d8:after {
-	content: "v6.9.1";
+	content: "";
 	color: rgba(255, 255, 255, .3);
 	font-family: var(--code-font);
 	font-size: 10px
