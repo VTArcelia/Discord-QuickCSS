@@ -1,30 +1,10 @@
-/* Nav Bar / Discord Logo */
-.wordmark_a934d8 svg {
- display: none; 
-}
-.wordmark_a934d8:before {
- content: "Baka";
- color: rgba(255, 255, 255, .7);
- font-size: 14px;
- text-shadow: 0 0 3px #000
-}
-
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_e10160"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
-[class*=userPopoutOverlayBackground] {
- max-height: 60vh;
-}
-
-/* Un-Simplify Bios */
-[class^="descriptionClamp_"] {
- display: block!important;
-}
 
 /* Remove mild annoyances */
 [aria-label="Show User Profile"] {display: none;}
-[aria-label="Hide User Profile"] {display: none;}
 .welcomeCTA_f6dde0 {display: none;}
 .roleIcon_d5100b.roleIcon_f9f2ca.clickable_d5100b {display: none !important;}
 .recentsIcon_ea0547 {display: none;}
@@ -40,13 +20,26 @@ div [aria-label="Help"] {display: none !important;}
 a[href="/store"] {display: none;}
 a[href="/shop"] {display: none;}
 
-/*i'm new here, say hi!*/
-[class*=newMemberBadge]:before {
-    content: url(https://cdn.discordapp.com/emojis/1264371840286195904.png?size=64&quality=lossless);
-    transform: translate(-100%, -110%);
-    display: inline-block;
-    scale: 0.32;
-}
 
-/* Attachment Links */
-.attachmentLink {display: none}
+
+/* message context menu */
+.wrapper_a24e84 {display: none;}
+#message-add-reaction {display: none;}
+#message-thread {display: none;}
+#message-apps {display: none;}
+#message-mark-unread {display: none;}
+#message-tts {display: none;}
+
+/* user context menu */
+#user-context-invite-to-server {display: none;}
+#user-context-roles {display: none;}
+#user-context-apps {display: none;}
+#user-context-call {display: none;}
+#user-context-note {display: none;}
+#user-context-mention {display: none;}
+#user-context-view-avatar {display: none;}
+
+/* Removes Separators (probably fucks settings page up but who really cares) */
+.separator_d90b3d {display: none;}
+
+
