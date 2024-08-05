@@ -3,7 +3,7 @@ div[class="iconWrapper_e10160"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
 
-/* Remove mild annoyances */
+/* Removes some mild annoyances */
 [aria-label="Show User Profile"] {display: none;}
 .welcomeCTA_f6dde0 {display: none;}
 .roleIcon_d5100b.roleIcon_f9f2ca.clickable_d5100b {display: none !important;}
@@ -19,8 +19,6 @@ div [aria-label="Help"] {display: none !important;}
 [href*="tenor"] {display: none;}
 a[href="/store"] {display: none;}
 a[href="/shop"] {display: none;}
-
-
 
 /* message context menu */
 .wrapper_a24e84 {display: none;}
@@ -42,4 +40,6 @@ a[href="/shop"] {display: none;}
 /* Removes Separators (probably fucks settings page up but who really cares) */
 .separator_d90b3d {display: none;}
 
+/* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
+.channelAppLauncher_df39bd {display: none;}
 
