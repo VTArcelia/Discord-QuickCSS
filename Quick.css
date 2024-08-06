@@ -36,6 +36,7 @@ a[href="/shop"] {display: none;}
 #user-context-note {display: none;}
 #user-context-mention {display: none;}
 #user-context-view-avatar {display: none;}
+#user-context-mark-channel-read {display: none;}
 
 /* Removes Separators (probably fucks settings page up but who really cares) */
 .separator_d90b3d {display: none;}
