@@ -859,7 +859,7 @@ nav.container_ee69e0 {
 
 .theme-light .button_f9af59,
 .theme-light .icon_fc4f04,
-.theme-light .button_f67531,
+.theme-light .button_adca65,
 .theme-light .search_a46bef:not(.open_a46bef) .icon_effbe2 {
 	color: rgba(0, 0, 0, 0.5);
 	/*50%*/
@@ -867,7 +867,7 @@ nav.container_ee69e0 {
 
 .theme-dark .button_f9af59,
 .theme-dark .icon_fc4f04,
-.theme-dark .button_f67531,
+.theme-dark .button_adca65,
 .theme-dark .search_a46bef:not(.open_a46bef) .icon_effbe2 {
 	color: rgba(255, 255, 255, 0.5);
 	/*50%*/
@@ -1186,11 +1186,11 @@ nav.container_ee69e0 {
 	fill: rgba(0, 0, 0, 0.45)
 }
 
-.theme-light .muted_f9647d {
+.theme-light .muted_ec8679 {
 	color: rgba(0, 0, 0, 0.25);
 }
 
-.theme-dark .muted_f9647d {
+.theme-dark .muted_ec8679 {
 	color: rgba(0, 0, 0, 0.25);
 }
 
