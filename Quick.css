@@ -44,3 +44,46 @@ a[href="/shop"] {display: none;}
 /* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
 .channelAppLauncher_df39bd {display: none;}
 
+
+/* Collapsed Member List & Search */
+.members_cbd271,
+.membersWrap_cbd271,
+.searchResultsWrap_c2b47d {
+  z-index: 3;
+  border-radius: 18px 0px 0px 18px !important;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 62px;
+  min-width: 60px;
+  transition-property: width, min-width;
+  transition-duration: 600ms;
+}
+.members_cbd271:hover,
+.membersWrap_cbd271:hover {
+  width: 240px;
+  min-width: 240px;
+}
+.searchResultsWrap_c2b47d:hover {
+  width: 418px;
+  min-width: 418px;
+}
+.searchResultGroup_a9e225 {
+  width: 394px;
+}
+.membersWrap_cbd271,
+.searchResultsWrap_c2b47d {
+  position: absolute;
+  right: 0;
+  height: 99%;
+  box-shadow: none;
+}
+.chatContent_a7d72e {
+  min-width: calc(100% - 60px);
+  max-width: calc(100% - 60px);
+}
+.chatContent_a7d72e[aria-label=" (channel)"] {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
