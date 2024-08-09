@@ -44,6 +44,8 @@ a[href="/shop"] {display: none;}
 /* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
 .channelAppLauncher_df39bd {display: none;}
 
+/* Remove Threads Popout from channel list */
+.popout_c5b389 {display: none;}
 
 /* Collapsed Member List & Search */
 .members_cbd271,
