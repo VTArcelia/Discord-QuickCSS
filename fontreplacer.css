@@ -25,7 +25,7 @@ these are the default fonts as of april 2024:
    --font-display: "Atkinson Hyperlegible"; /* channellist categories and some other places */
    --font-headline: "Atkinson Hyperlegible"; /* headlines, big texts like like in the nitro settings */
    --font-code: "Atkinson Hyperlegible"; /* code blocks */
-   --nvfontsize: 12px; } /* font size override, because sometimes changing it in discord settings isn't ideal */
+   --nvfontsize: 13px; } /* font size override, because sometimes changing it in discord settings isn't ideal */
 
 /* we want to force the fontsize for a bunch of elements */
 html,
