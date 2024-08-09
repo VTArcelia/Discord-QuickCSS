@@ -19,6 +19,8 @@ div [aria-label="Help"] {display: none !important;}
 [href*="tenor"] {display: none;}
 a[href="/store"] {display: none;}
 a[href="/shop"] {display: none;}
+div [aria-label="Open sticker picker"] {display: none;}
+div [aria-label="Open GIF picker"] {display: none;}
 
 /* message context menu */
 .wrapper_a24e84 {display: none;}
