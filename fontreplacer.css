@@ -10,7 +10,7 @@ Best way is to use google fonts. Press 'get font' > 'get embed code' > import an
 To use multiple fonts, add multiple imports.
 The imported CSS file contains a whole bunch of @font-face rules that map all available variants of the fonts so all font-weights and styles are properly applied.
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i');
 
 /*
 these are the default fonts as of april 2024:
@@ -21,10 +21,10 @@ these are the default fonts as of april 2024:
 */
 
 :root
- { --font-primary: "Roboto Mono"; /* main font */
-   --font-display: "Roboto Mono"; /* channellist categories and some other places */
-   --font-headline: "Roboto Mono"; /* headlines, big texts like like in the nitro settings */
-   --font-code: "Roboto Mono"; /* code blocks */
+ { --font-primary: "Atkinson Hyperlegible"; /* main font */
+   --font-display: "Atkinson Hyperlegible"; /* channellist categories and some other places */
+   --font-headline: "Atkinson Hyperlegible"; /* headlines, big texts like like in the nitro settings */
+   --font-code: "Atkinson Hyperlegible"; /* code blocks */
    --nvfontsize: 12px; } /* font size override, because sometimes changing it in discord settings isn't ideal */
 
 /* we want to force the fontsize for a bunch of elements */
