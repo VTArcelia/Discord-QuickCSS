@@ -1,0 +1,45 @@
+/**
+ * @name Koko
+ * @author Baka.Aqua
+ * @version 1.0
+ * @description Kamitsubaki Studio's Koko
+ * @authorId 824922747423031359
+*/
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+
+:root {
+  --background-image: url('https://i.postimg.cc/CY8DxsXV/Koko.jpg');
+  --main-color: #007dbd;
+  --hover-color: #03679b;
+  --shadow: rgba(0,0,0,.4);
+  --serverlist-brightness: 0.53;
+  --left-brightness: 0.53;
+  --middle-brightness: 0.46;
+  --right-brightness: 0.23;
+  --popout-modal-brightness: 0;
+  --gradient-primary: 15,240,250;
+  --gradient-secondary: 25,25,25;
+  --link-colour: #00b0f4;
+  --scrollbar-colour: rgba(72,209,204);
+  --gradient-direction: 185deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  --window-padding: 6px;
+  --window-roundness: 10px;
+  --update-notice-1: none;
+  --rs-small-spacing: 1px;
+  --rs-medium-spacing: 1px;
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 30%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
+}
