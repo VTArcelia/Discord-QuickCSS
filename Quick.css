@@ -49,6 +49,11 @@ div [aria-label="Open GIF picker"] {display: none;}
 /* Remove Threads Popout from channel list */
 .popout_c5b389 {display: none;}
 
+/* Disable Discord mirroring your camera (replace 824922747423031359 with your USER ID)  */
+div[data-selenium-video-tile="824922747423031359"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
+  transform: scaleX(-1);
+}
+
 /* Collapsed Member List & Search */
 .members_cbd271,
 .membersWrap_cbd271,
