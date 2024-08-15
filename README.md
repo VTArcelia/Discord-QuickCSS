@@ -7,4 +7,4 @@ Recommended to use on any of the following [Vencord](https://github.com/Vendicat
 
 [fixicons.css is MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme)
 
-[LostChapter](https://discordstyles.github.io/FrostedGlass)
+[LostChapter is Frosted Glass](https://discordstyles.github.io/FrostedGlass)
