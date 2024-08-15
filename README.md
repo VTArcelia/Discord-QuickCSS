@@ -1,4 +1,4 @@
-Recommended to use on any of the following [Vencord](https://github.com/Vendicated/Vencord) [Equicord (vencord+)](https://github.com/Equicord/Equicord) or [shelter](https://github.com/uwu/shelter)
+Recommended to use on any of the following [Vencord](https://github.com/Vendicated/Vencord) [ez-vencord-install which is vencord dev + plugins](https://github.com/Blanc-dot/ez-vencord-install) or [shelter](https://github.com/uwu/shelter)
 
 ------------------------
 
