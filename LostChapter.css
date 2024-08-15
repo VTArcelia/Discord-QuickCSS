@@ -1,0 +1,143 @@
+/**
+ * @name Lost Chapter
+ * @version 1.0.0
+ * @author Baka.Aqua
+ * @authorId 824922747423031359
+ * @description Frosted Glass
+ * @source https://github.com/DiscordStyles/FrostedGlass
+*/
+
+
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url('https://blanc-dot.github.io/Discord-QuickCSS/fontreplacer.css');
+
+:root {
+  --background-image: url('https://i.postimg.cc/q4nZz1ms/lost.jpg');
+  --background-image-blur: 1px;
+  --background-image-size: cover;
+  --background-image-position: center;
+  --popout-image: var(--background-image);
+  --popout-image-blur: 3px;
+  --popout-image-size: cover;
+  --popout-image-position: center;
+  --overlay-image: var(--background-image);
+  --overlay-image-blur: 3px;
+  --overlay-image-size: cover;
+  --overlay-image-position: center;
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
+  --home-button-size: cover;
+  --home-button-position: center;
+  --serverlist-brightness: 0.24;
+  --left-brightness: 0.4;
+  --middle-brightness: 0.36;
+  --right-brightness: 0.12;
+  --overlay-brightness: 0.5;
+  --gradient-primary: 181,68,200;
+  --gradient-secondary: 7,21,99;
+  --link-colour: #0FF0FA;
+  --scrollbar-colour: rgba(255,255,255,0.05);
+  --gradient-direction: 185deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  --font: 'Atkinson Hyperlegible';
+  --window-padding: 0px;
+  --window-roundness: 0px;
+  --update-notice-1: none;
+}
+
+/* Any custom CSS below here */
+
+
+
+
+/* Anti Fake Play Video Button */
+div[class="iconWrapper_e10160"] {
+ background-color: rgba(172, 110, 253, 0.774) 
+}
+
+/* Removes some mild annoyances */
+[aria-label="Show User Profile"] {display: none;}
+.welcomeCTA_f6dde0 {display: none;}
+.roleIcon_d5100b.roleIcon_f9f2ca.clickable_d5100b {display: none !important;}
+.recentsIcon_ea0547 {display: none;}
+[aria-label="Help"] {display: none;}
+.selectionGroup_bde965 {display: none;}
+.presets_f45ea6, .header_f45ea6, .themeTitle_a614a7, .divider_b03b7f.marginTop20_f7730b {display: none;}
+[data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
+div [aria-label="Start Voice Call"] {display: none !important;}
+div [aria-label="Start Video Call"] {display: none !important;}
+div [aria-label="Help"] {display: none !important;}
+[href*="catbox"] {display: none;}
+[href*="tenor"] {display: none;}
+a[href="/store"] {display: none;}
+a[href="/shop"] {display: none;}
+div [aria-label="Open sticker picker"] {display: none;}
+div [aria-label="Open GIF picker"] {display: none;}
+
+/* message context menu */
+.wrapper_a24e84 {display: none;}
+#message-add-reaction {display: none;}
+#message-thread {display: none;}
+#message-apps {display: none;}
+#message-mark-unread {display: none;}
+#message-tts {display: none;}
+
+/* user context menu */
+#user-context-invite-to-server {display: none;}
+#user-context-roles {display: none;}
+#user-context-apps {display: none;}
+#user-context-call {display: none;}
+#user-context-note {display: none;}
+#user-context-mention {display: none;}
+#user-context-view-avatar {display: none;}
+#user-context-mark-channel-read {display: none;}
+
+/* Triple Dot message context menu */
+#message-actions-add-reaction {display: none;}
+#message-actions-thread {display: none;}
+#message-actions-mark-unread {display: none;}
+#message-actions-tts {display: none;}
+#message-actions-apps {display: none;}
+
+/* Removes Separators (probably fucks settings page up but who really cares) */
+.separator_d90b3d {display: none;}
+
+/* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
+.channelAppLauncher_df39bd {display: none;}
+
+/* Remove Threads Popout from channel list */
+.popout_c5b389 {display: none;}
+
+/* Disable Discord mirroring your camera (replace 824922747423031359 with your USER ID)  */
+div[data-selenium-video-tile="824922747423031359"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
+  transform: scaleX(-1);
+}
+
+/* Remove Message Headers */
+div:is([class*=messageContent],[class*=embedDescription]) > :is(h1, h2, h3, small) {
+  font-size: 100% !important;
+  font-weight: inherit !important;
+  margin: unset !important;
+  color: var(--text-normal) !important;
+}
+span:is([class*="before_subtext_"],[class^="subtext_"]) {
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+  font-weight: unset;
+}
+div:is([class*=messageContent],[class*=embedDescription]) > h1::before {
+  content: "# ";
+}
+div:is([class*=messageContent],[class*=embedDescription]) > h2::before {
+  content: "## ";
+}
+div:is([class*=messageContent],[class*=embedDescription]) > h3::before {
+  content: "### ";
+}
+div:is([class*=messageContent],[class*=embedDescription]) > small::before {
+  content: "-# ";
+}
+
+
