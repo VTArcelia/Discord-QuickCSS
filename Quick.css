@@ -1,36 +1,69 @@
+/* Disable Discord mirroring your camera (replace 824922747423031359 with your USER ID)  */
+div[data-selenium-video-tile="824922747423031359"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
+  transform: scaleX(-1);
+}
+
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_e10160"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
 
+/* unread channel indicators */
+.iconContainer_d8bfb3 {
+  width: 6px;
+  height: 6px;
+  margin-right: 10px !important;
+  margin-left: 8px !important;
+  margin: 0px;
+  border-radius: 100%;
+}
+/* Color for unread channel indicators */
+.unread_d8bfb3 {
+  background-color: #f188ff; 
+  width: 6px;
+  height: 6px;
+  top: 20px;
+  margin-left: 10px !important;
+  margin: 0px;
+  border-radius: 100%;
+}
+
+/* custom chat bar input text  */
+:root{
+ --prompt-text: "mrreow~! :3";
+}
+/* hide existing text */
+[class*=placeholder][class*=slateTextArea] {visibility: hidden;}
+/* add custom text */
+[class*=placeholder][class*=slateTextArea]::before {
+  visibility: 
+visible; opacity: 35%; 
+content: var(--prompt-text); 
+}
+
 /* Removes some mild annoyances */
+[aria-label="Open sticker picker"] {display: none !important;}
+[aria-label="Add Friends to DM"] {display: none !important;}
 [aria-label="Show User Profile"] {display: none !important;}
-.welcomeCTA_f6dde0 {display: none !important;}
-.roleIcon_afae9f.roleIcon_f9f2ca.clickable_afae9f {display: none !important;}
-.recentsIcon_ea0547 {display: none !important;}
+[aria-label="Start Voice Call"] {display: none !important;}
+[aria-label="Start Video Call"] {display: none !important;}
+[aria-label="Hide Member List"] {display: none !important;}
+[aria-label="Open GIF picker"] {display: none !important;}
+[aria-label="Threads"] {display: none !important;}
+[aria-label="Inbox"] {display: none !important;}
 [aria-label="Help"] {display: none !important;}
-.selectionGroup_bde965 {display: none !important;}
-.presets_f45ea6, .header_f45ea6, .themeTitle_a614a7, .divider_b03b7f.marginTop20_f7730b {display: none !important;}
-[data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
-div [aria-label="Start Voice Call"] {display: none !important;}
-div [aria-label="Start Video Call"] {display: none !important;}
-div [aria-label="Help"] {display: none !important;}
 [href*="catbox"] {display: none !important;}
 [href*="tenor"] {display: none !important;}
-a[href="/store"] {display: none !important;}
-a[href="/shop"] {display: none !important;}
-div [aria-label="Open sticker picker"] {display: none !important;}
-div [aria-label="Open GIF picker"] {display: none !important;}
+[href="/store"] {display: none !important;}
+[href="/shop"] {display: none !important;}
 
-/* message context menu */
+/* Right Click Menus */
 .wrapper_a24e84 {display: none !important;}
 #message-add-reaction {display: none !important;}
 #message-thread {display: none !important;}
 #message-apps {display: none !important;}
 #message-mark-unread {display: none !important;}
 #message-tts {display: none !important;}
-
-/* user context menu */
 #user-context-invite-to-server {display: none !important;}
 #user-context-roles {display: none !important;}
 #user-context-apps {display: none !important;}
@@ -39,7 +72,6 @@ div [aria-label="Open GIF picker"] {display: none !important;}
 #user-context-mention {display: none !important;}
 #user-context-view-avatar {display: none !important;}
 #user-context-mark-channel-read {display: none !important;}
-
 /* Triple Dot message context menu */
 #message-actions-add-reaction {display: none !important;}
 #message-actions-thread {display: none !important;}
@@ -50,16 +82,11 @@ div [aria-label="Open GIF picker"] {display: none !important;}
 /* Removes Separators (probably fucks settings page up but who really cares) */
 .separator_d90b3d {display: none !important;}
 
-/* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
+/* Remove the goofy ass app launcher they just added */
 .channelAppLauncher_df39bd {display: none !important;}
 
 /* Remove Threads Popout from channel list */
 .popout_c5b389 {display: none !important;}
-
-/* Disable Discord mirroring your camera (replace 824922747423031359 with your USER ID)  */
-div[data-selenium-video-tile="824922747423031359"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
-  transform: scaleX(-1);
-}
 
 /* Remove Message Headers */
 div:is([class*=messageContent],[class*=embedDescription]) > :is(h1, h2, h3, small) {
@@ -102,15 +129,8 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   margin-top: 15px;
 }
 
-/* custom chat bar input text  */
-:root{
-   --prompt-text: "Any Custom Text Here Bitches";
-}
-/* hide existing text */
-[class*=placeholder][class*=slateTextArea] {visibility: hidden;}
-/* add custom text */
-[class*=placeholder][class*=slateTextArea]::before {
-  visibility: 
-visible; opacity: 35%; 
-content: var(--prompt-text); 
-}
+
+
+
+
+
