@@ -4,95 +4,113 @@ div[class="iconWrapper_e10160"] {
 }
 
 /* Removes some mild annoyances */
-[aria-label="Show User Profile"] {display: none;}
-.welcomeCTA_f6dde0 {display: none;}
-.roleIcon_d5100b.roleIcon_f9f2ca.clickable_d5100b {display: none !important;}
-.recentsIcon_ea0547 {display: none;}
-[aria-label="Help"] {display: none;}
-.selectionGroup_bde965 {display: none;}
-.presets_f45ea6, .header_f45ea6, .themeTitle_a614a7, .divider_b03b7f.marginTop20_f7730b {display: none;}
+[aria-label="Show User Profile"] {display: none !important;}
+.welcomeCTA_f6dde0 {display: none !important;}
+.roleIcon_afae9f.roleIcon_f9f2ca.clickable_afae9f {display: none !important;}
+.recentsIcon_ea0547 {display: none !important;}
+[aria-label="Help"] {display: none !important;}
+.selectionGroup_bde965 {display: none !important;}
+.presets_f45ea6, .header_f45ea6, .themeTitle_a614a7, .divider_b03b7f.marginTop20_f7730b {display: none !important;}
 [data-list-item-id="private-channels-uid_18___nitro"] {display: none !important;}
 div [aria-label="Start Voice Call"] {display: none !important;}
 div [aria-label="Start Video Call"] {display: none !important;}
 div [aria-label="Help"] {display: none !important;}
-[href*="catbox"] {display: none;}
-[href*="tenor"] {display: none;}
-a[href="/store"] {display: none;}
-a[href="/shop"] {display: none;}
-div [aria-label="Open sticker picker"] {display: none;}
-div [aria-label="Open GIF picker"] {display: none;}
+[href*="catbox"] {display: none !important;}
+[href*="tenor"] {display: none !important;}
+a[href="/store"] {display: none !important;}
+a[href="/shop"] {display: none !important;}
+div [aria-label="Open sticker picker"] {display: none !important;}
+div [aria-label="Open GIF picker"] {display: none !important;}
 
 /* message context menu */
-.wrapper_a24e84 {display: none;}
-#message-add-reaction {display: none;}
-#message-thread {display: none;}
-#message-apps {display: none;}
-#message-mark-unread {display: none;}
-#message-tts {display: none;}
+.wrapper_a24e84 {display: none !important;}
+#message-add-reaction {display: none !important;}
+#message-thread {display: none !important;}
+#message-apps {display: none !important;}
+#message-mark-unread {display: none !important;}
+#message-tts {display: none !important;}
 
 /* user context menu */
-#user-context-invite-to-server {display: none;}
-#user-context-roles {display: none;}
-#user-context-apps {display: none;}
-#user-context-call {display: none;}
-#user-context-note {display: none;}
-#user-context-mention {display: none;}
-#user-context-view-avatar {display: none;}
-#user-context-mark-channel-read {display: none;}
+#user-context-invite-to-server {display: none !important;}
+#user-context-roles {display: none !important;}
+#user-context-apps {display: none !important;}
+#user-context-call {display: none !important;}
+#user-context-note {display: none !important;}
+#user-context-mention {display: none !important;}
+#user-context-view-avatar {display: none !important;}
+#user-context-mark-channel-read {display: none !important;}
+
+/* Triple Dot message context menu */
+#message-actions-add-reaction {display: none !important;}
+#message-actions-thread {display: none !important;}
+#message-actions-mark-unread {display: none !important;}
+#message-actions-tts {display: none !important;}
+#message-actions-apps {display: none !important;}
 
 /* Removes Separators (probably fucks settings page up but who really cares) */
-.separator_d90b3d {display: none;}
+.separator_d90b3d {display: none !important;}
 
 /* Remove the goofy ass app launcher they just added what the fuck is that, why is it not connected to the normal chat bar, do not move my chat bar ever again discord */
-.channelAppLauncher_df39bd {display: none;}
+.channelAppLauncher_df39bd {display: none !important;}
 
 /* Remove Threads Popout from channel list */
-.popout_c5b389 {display: none;}
+.popout_c5b389 {display: none !important;}
 
 /* Disable Discord mirroring your camera (replace 824922747423031359 with your USER ID)  */
 div[data-selenium-video-tile="824922747423031359"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
   transform: scaleX(-1);
 }
 
-/* Collapsed Member List & Search */
-.members_cbd271,
-.membersWrap_cbd271,
-.searchResultsWrap_c2b47d {
-  z-index: 3;
-  border-radius: 18px 0px 0px 18px !important;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  width: 62px;
-  min-width: 60px;
-  transition-property: width, min-width;
-  transition-duration: 600ms;
+/* Remove Message Headers */
+div:is([class*=messageContent],[class*=embedDescription]) > :is(h1, h2, h3, small) {
+  font-size: 100% !important;
+  font-weight: inherit !important;
+  margin: unset !important;
+  color: var(--text-normal) !important;
 }
-.members_cbd271:hover,
-.membersWrap_cbd271:hover {
-  width: 240px;
-  min-width: 240px;
+span:is([class*="before_subtext_"],[class^="subtext_"]) {
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+  font-weight: unset;
 }
-.searchResultsWrap_c2b47d:hover {
-  width: 418px;
-  min-width: 418px;
+div:is([class*=messageContent],[class*=embedDescription]) > h1::before {
+  content: "# ";
 }
-.searchResultGroup_a9e225 {
-  width: 394px;
+div:is([class*=messageContent],[class*=embedDescription]) > h2::before {
+  content: "## ";
 }
-.membersWrap_cbd271,
-.searchResultsWrap_c2b47d {
-  position: absolute;
-  right: 0;
-  height: 99%;
-  box-shadow: none;
+div:is([class*=messageContent],[class*=embedDescription]) > h3::before {
+  content: "### ";
 }
-.chatContent_a7d72e {
-  min-width: calc(100% - 60px);
-  max-width: calc(100% - 60px);
-}
-.chatContent_a7d72e[aria-label=" (channel)"] {
-  min-width: 100%;
-  max-width: 100%;
+div:is([class*=messageContent],[class*=embedDescription]) > small::before {
+  content: "-# ";
 }
 
+/* Show Status & Username */
+[class^=hovered], [class^=hoverRoll][class*=forceHover]:not([class^=disabled]) > [class^=default]
+{
+  opacity: 1!important;
+  transform: none;
+}
+[class^=hovered]::before
+{
+  content: "@";
+}
+[class^=hoverRoll] > [class^=default]
+{
+  margin-top: 15px;
+}
 
+/* custom chat bar input text  */
+:root{
+   --prompt-text: "Any Custom Text Here Bitches";
+}
+/* hide existing text */
+[class*=placeholder][class*=slateTextArea] {visibility: hidden;}
+/* add custom text */
+[class*=placeholder][class*=slateTextArea]::before {
+  visibility: 
+visible; opacity: 35%; 
+content: var(--prompt-text); 
+}
