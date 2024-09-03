@@ -129,8 +129,20 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   margin-top: 15px;
 }
 
+/* Boost Gradient */
+body {
+    --guild-boosting-blue: #0ff0fa, #9e6eeb, #db74fa;
+    --guild-boosting-purple: #db74fa, #9e6eeb, #0ff0fa;
+}
 
-
-
+/* Make Delete/Logout Buttons Red (requires theme attributes) */
+[class^=item_][data-tab-id="DELETE"],
+[class^=item_][data-tab-id="logout"] {
+    color: var(--info-danger-foreground) !important;
+}
+[class^=item_][data-tab-id="DELETE"]:hover,
+[class^=item_][data-tab-id="logout"]:hover {
+    background-color: var(--info-danger-background) !important;
+}
 
 
