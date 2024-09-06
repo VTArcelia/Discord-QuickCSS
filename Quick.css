@@ -109,21 +109,6 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   content: "-# ";
 }
 
-/* Show Status & Username */
-[class^=hovered], [class^=hoverRoll][class*=forceHover]:not([class^=disabled]) > [class^=default]
-{
-  opacity: 1!important;
-  transform: none;
-}
-[class^=hovered]::before
-{
-  content: "@";
-}
-[class^=hoverRoll] > [class^=default]
-{
-  margin-top: 15px;
-}
-
 /* Boost Gradient */
 body {
     --guild-boosting-blue: #0ff0fa, #9e6eeb, #db74fa;
