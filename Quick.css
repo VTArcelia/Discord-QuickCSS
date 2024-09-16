@@ -142,3 +142,13 @@ body {
 .wrapper_fea3ef:hover * {
   opacity: 1;
 }
+
+/* Hide Activity in member list */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+[data-list-id="guildsnav"] [class^="footer"]:has(>[class^="gradient"]) {
+  display: none;
+}
