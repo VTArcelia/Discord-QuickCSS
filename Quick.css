@@ -152,3 +152,11 @@ body {
 [data-list-id="guildsnav"] [class^="footer"]:has(>[class^="gradient"]) {
   display: none;
 }
+
+/* Remove the Create Invite button from Channel Lists */
+[class^="iconVisibility_"] [aria-label="Create Invite"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [class^="channelInfo_"] {
+    display: flex !important;
+}
