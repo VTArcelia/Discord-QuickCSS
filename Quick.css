@@ -125,23 +125,6 @@ body {
     background-color: var(--info-danger-background) !important;
 }
 
-/* Collapsable Server List */
-.wrapper_fea3ef:not(:hover) {
-  width: 12px;
-  background-color: var(--primary-630) !important;
-}
-
-.wrapper_fea3ef * {
-  opacity: 0;
-}
-
-.wrapper_fea3ef:hover {
-  width: 72px;
-}
-
-.wrapper_fea3ef:hover * {
-  opacity: 1;
-}
 
 /* Hide Activity in member list */
 [class*='membersGroup']:has([role=button]),
@@ -159,4 +142,23 @@ body {
 }
 [class^="iconVisibility_"] [class^="channelInfo_"] {
     display: flex !important;
+}
+
+/* Automatically resizing gif picker */
+:root {
+    /* Change me! */
+    --expression-picker-aspect-ratio: 2 / 1;
+}
+[class*="expressionPickerPositionLayer_"] [class*="positionContainer_"] {
+    height: calc(100vh - 128px);
+}
+[class*="expressionPickerPositionLayer_"] [class*="drawerSizingWrapper_"] {
+    max-height: 100%;
+    bottom: 0px;
+    height: auto;
+    aspect-ratio: var(--expression-picker-aspect-ratio);
+}
+/* Fixes soundmoji picker which has a hardcoded height */
+[class*="expressionPickerPositionLayer_"] [class*="soundboardContainer_"] [class*="picker_"] {
+    height: 100%;
 }

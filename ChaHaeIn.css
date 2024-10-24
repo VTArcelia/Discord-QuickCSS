@@ -1,5 +1,5 @@
 /**
- * @name Lost Chapter
+ * @name Cha Hae In
  * @version 1.0.0
  * @author Arcelia_x
  * @authorId 824922747423031359
@@ -8,12 +8,13 @@
 */
 
 
-@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
-@import url('https://blanc-dot.github.io/Discord-QuickCSS/fontreplacer.css');
+@import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
+@import url(https://blanc-dot.github.io/Discord-QuickCSS/fixicons.css);
+@import url(https://blanc-dot.github.io/Discord-QuickCSS/fontreplacer.css);
+@import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
 
 :root {
-  --background-image: url('https://i.postimg.cc/q4nZz1ms/lost.jpg');
+  --background-image: url('https://i.postimg.cc/pRCvzyfJ/1376865.jpg');
   --background-image-blur: 1px;
   --background-image-size: cover;
   --background-image-position: center;
@@ -28,11 +29,11 @@
   --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
   --home-button-size: cover;
   --home-button-position: center;
-  --serverlist-brightness: 0.24;
+  --serverlist-brightness: 0.34;
   --left-brightness: 0.4;
-  --middle-brightness: 0.36;
+  --middle-brightness: 0.46;
   --right-brightness: 0.12;
-  --overlay-brightness: 0.5;
+  --overlay-brightness: 0.7;
   --gradient-primary: 181,68,200;
   --gradient-secondary: 7,21,99;
   --link-colour: #0FF0FA;
