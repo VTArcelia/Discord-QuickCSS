@@ -86,6 +86,7 @@ content: var(--prompt-text);
 [aria-label="Start Video Call"] {display: none !important;}
 [aria-label="Hide Member List"] {display: none !important;}
 [aria-label="Open GIF picker"] {display: none !important;}
+[aria-label="Send a gift"] {display: none !important;}
 [aria-label="Threads"] {display: none !important;}
 [aria-label="Inbox"] {display: none !important;}
 [aria-label="Help"] {display: none !important;}

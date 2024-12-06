@@ -1,4 +1,4 @@
-Recommended to use on any of the following [Vencord](https://github.com/Vendicated/Vencord) [ez-vencord-install which is vencord dev + plugins](https://github.com/Blanc-dot/ez-vencord-install) or [shelter](https://github.com/uwu/shelter)
+Recommended to use on any of the following [Ez-Vencord-Install for dev edition with third party plugins pre-installed](https://github.com/Blanc-dot/ez-vencord-install), [SheltUpdate for multi client loading](https://shelter.uwu.network/install), or [Vanilla Vencord](https://vencord.dev/)
 
 ------------------------
 
@@ -7,4 +7,4 @@ Recommended to use on any of the following [Vencord](https://github.com/Vendicat
 
 [fixicons.css is MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme)
 
-[LostChapter is Frosted Glass](https://discordstyles.github.io/FrostedGlass)
+
