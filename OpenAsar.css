@@ -210,7 +210,7 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
     height: 100%;
 }
 
-/* test: Revert Favorite Icon on gifs? */
-[class*=gifFavoriteButton_] {
-    right: unset;
+/* left align all gif favorite icons */
+[class^=result_] [class^=favButton_] {
+    right: unset; 
 }
