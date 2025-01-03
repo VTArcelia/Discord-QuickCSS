@@ -1,15 +1,15 @@
 /**
  * @name Why Do I need this Vencord
  * @version 1.0.0
- * @author No one
+ * @author VTArcelia
  * @authorId 643945264868098049
  * @description Pointless filler
- * @source https://github.com/Blanc-dot/Discord-QuickCSS
+ * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
 @import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
-@import url(https://blanc-dot.github.io/Discord-QuickCSS/fixicons.css);
-@import url(https://blanc-dot.github.io/Discord-QuickCSS/fontreplacer.css);
+@import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css);
+@import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
 @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
 @import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtonsAlternate.theme.css");
 
