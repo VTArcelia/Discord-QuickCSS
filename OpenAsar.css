@@ -11,10 +11,10 @@
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css);
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
 @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
-@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtonsAlternate.theme.css");
+@import url(https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtonsAlternate.theme.css);
 
 :root {
-  --background-image: url('https://i.postimg.cc/Nj0gHVds/Starry-Night.gif');
+  --background-image: url(https://i.postimg.cc/38qJV4ys/1355871.jpg);
   --background-image-blur: 1px;
   --background-image-size: cover;
   --background-image-position: center;
