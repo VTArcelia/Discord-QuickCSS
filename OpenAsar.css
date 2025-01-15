@@ -1,9 +1,9 @@
 /**
- * @name Why Do I need this Vencord
+ * @name Pointless Text
  * @version 1.0.0
  * @author VTArcelia
  * @authorId 643945264868098049
- * @description Pointless filler
+ * @description Pointless Filler
  * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
@@ -212,4 +212,9 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
 /* left align all gif favorite icons */
 [class^=result_] [class^=favButton_] {
     right: unset; 
+}
+
+/* Remove All emoji reactions */
+[class^=hoverBarButton_]:has(>div>.emoji) {
+  display: none;
 }
