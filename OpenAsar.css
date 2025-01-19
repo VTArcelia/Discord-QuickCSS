@@ -10,7 +10,7 @@
 @import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css);
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
-@import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
+/* @import url(https://discordstyles.github.io/Addons/windows-titlebar.css); */ /* taken out for now since using OS native titlebars personally */
 
 :root {
   --background-image: url(https://i.postimg.cc/TT6qg45p/Maomao-Kusuriya-no-Hitorigoto-full-4127873.jpg);
