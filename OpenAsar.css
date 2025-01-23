@@ -8,7 +8,7 @@
 */
 
 @import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
-@import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css);
+/* @import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css); */ /* Taken out due to every icon having a red slash might not be this causing it but i'll go back to old icons until i find what is causing it */
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
 /* @import url(https://discordstyles.github.io/Addons/windows-titlebar.css); */ /* taken out for now since using OS native titlebars personally */
 
