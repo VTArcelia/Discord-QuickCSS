@@ -1,53 +1,14 @@
 /**
- * @name Pointless Text
+ * @name OpenAsar
  * @version 1.0.0
  * @author VTArcelia
  * @authorId 824922747423031359
- * @description Pointless Filler
+ * @description this is for Snazzy Shelter when i forgor to reinject openasar
  * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
-@import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
-/* @import url(https://VTArcelia.github.io/Discord-QuickCSS/fixicons.css); */ /* Taken out due to every icon having a red slash might not be this causing it but i'll go back to old icons until i find what is causing it */
-@import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
-/* @import url(https://discordstyles.github.io/Addons/windows-titlebar.css); */ /* taken out for now since using OS native titlebars personally */
-@import url(https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css); /* does this work for userpfp */
+@import url(https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css);
 
-:root {
-  --background-image: url(https://i.postimg.cc/8D9RwVhV/1737834649201.png);
-  --background-image-blur: 1px;
-  --background-image-size: cover;
-  --background-image-position: center;
-  --popout-image: var(--background-image);
-  --popout-image-blur: 3px;
-  --popout-image-size: cover;
-  --popout-image-position: center;
-  --overlay-image: var(--background-image);
-  --overlay-image-blur: 3px;
-  --overlay-image-size: cover;
-  --overlay-image-position: center;
-  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
-  --home-button-size: cover;
-  --home-button-position: center;
-  --serverlist-brightness: 0.34;
-  --left-brightness: 0.4;
-  --middle-brightness: 0.46;
-  --right-brightness: 0.12;
-  --overlay-brightness: 0.7;
-  --gradient-primary: 181,68,200;
-  --gradient-secondary: 7,21,99;
-  --link-colour: #0FF0FA;
-  --scrollbar-colour: rgba(255,255,255,0.05);
-  --gradient-direction: 185deg;
-  --tint-colour: 255,51,159;
-  --tint-brightness: 0;
-  --font: 'Atkinson Hyperlegible';
-  --window-padding: 0px;
-  --window-roundness: 0px;
-  --update-notice-1: none;
-}
-
-/* END OF THEME GO BACK A LINE */
 
 /* Anti Fake Play Video Button */
 div[class="iconWrapper_e10160"] {
@@ -218,4 +179,12 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
 /* Remove All emoji reactions */
 [class^=hoverBarButton_]:has(>div>.emoji) {
   display: none;
+}
+
+/* Pin page switcher to bottom of search results */
+[class^="searchResultsWrap_"] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
 }
