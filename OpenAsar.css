@@ -11,12 +11,12 @@
 
 
 /* Anti Fake Play Video Button */
-div[class="iconWrapper_e10160"] {
+div[class="iconWrapper__6eb54"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
 
 /* unread channel indicators */
-.iconContainer_d8bfb3 {
+.iconContainer__2ea32 {
   width: 6px;
   height: 6px;
   margin-right: 10px !important;
@@ -25,7 +25,7 @@ div[class="iconWrapper_e10160"] {
   border-radius: 100%;
 }
 /* Color for unread channel indicators */
-.unread_d8bfb3 {
+.unread__2ea32 {
   background-color: #f188ff; 
   width: 6px;
   height: 6px;
@@ -66,7 +66,7 @@ content: var(--prompt-text);
 [href="/shop"] {display: none !important;}
 
 /* Right Click Menus */
-.wrapper_a24e84 {display: none !important;}
+.wrapper_f563df {display: none !important;}
 #message-add-reaction {display: none !important;}
 #message-thread {display: none !important;}
 #message-apps {display: none !important;}
@@ -88,13 +88,13 @@ content: var(--prompt-text);
 #message-actions-apps {display: none !important;}
 
 /* Removes Separators (probably fucks settings page up but who really cares) */
-.separator_d90b3d {display: none !important;}
+.separator_c1e9c4 {display: none !important;}
 
 /* Remove the goofy ass app launcher they just added */
-.channelAppLauncher_df39bd {display: none !important;}
+.channelAppLauncher_e6e74f {display: none !important;}
 
 /* Remove Threads Popout from channel list */
-.popout_c5b389 {display: none !important;}
+.popout__76f04 {display: none !important;}
 
 /* Remove Message Headers */
 div:is([class*=messageContent],[class*=embedDescription]) > :is(h1, h2, h3, small) {
