@@ -38,12 +38,12 @@
   --ap-base1-s: 31.7073170732%;
   --ap-base1-l: 8.0392156863%;
   --ap-base1-d: 20%;
-  --ap-base0: #0B0A10;
+  --ap-base0: #0b0a10;
   --ap-base0-h: 250deg;
   --ap-base0-s: 23.0769230769%;
   --ap-base0-l: 5.0980392157%;
   --ap-base0-d: 20%;
-  --ap-base1: #100E1B;
+  --ap-base1: #100e1b;
   --ap-red: #f38ba8;
   --ap-green: #a6e3a1;
   --ap-blue: #d3e8ff;
@@ -55,7 +55,7 @@
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -65,8 +65,8 @@
   --ap-code-aqua: var(--ap-aqua);
   --ap-code-yellow: var(--ap-yellow);
   --ap-code-orange: var(--ap-orange);
-  --ap-color-dp0: #100E1B;
-  --ap-color-dp1: #0B0A10;
+  --ap-color-dp0: #100e1b;
+  --ap-color-dp1: #0b0a10;
   --ap-color-dp2: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 5%));
   --ap-color-dp3: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 10%));
   --ap-color-dp4: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 15%));
@@ -94,12 +94,6 @@
   --ap-size-text-item: 1em;
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
-  --ap-font-text: 'Atkinson Hyperlegible', sans-serif;
-  --ap-font-interface: 'Atkinson Hyperlegible', sans-serif;
-  --ap-font-monospace: 'Atkinson Hyperlegible', sans-serif;
-  --ap-font-title: 'Atkinson Hyperlegible', sans-serif;
-  --ap-font-header: 'Atkinson Hyperlegible', sans-serif;
-  --ap-font-hashtag: 'Atkinson Hyperlegible', sans-serif;
 }
 
 :root,
@@ -137,23 +131,26 @@
   --brand-experiment-hover: #6f6af64d;
   --brand-experiment-560: #6e6af6;
   --channels-default: var(--ap-color-dp9);
-  --selected-indicator: var(--ap-red);
-  --hover-indicator: var(--ap-primary);
-  --font: 'Atkinson Hyperlegible', sans-serif;
-  --code-font: 'Atkinson Hyperlegible', sans-serif;
   --boost-bar: none;
 }
 
 .container__9293f {
   background: var(--ap-color-dp0) !important;
 }
-.msg-logger-modal-root, .flex__7c0ba, .content__49fc1, .matchingPostsRow_f369db, .grid_f369db, .list_f369db {
-  background-color: #100E1B; 
+.msg-logger-modal-root,
+.flex__7c0ba,
+.content__49fc1,
+.matchingPostsRow_f369db,
+.grid_f369db,
+.list_f369db {
+  background-color: #100e1b;
 }
-.inputDefault__0f084, .container__9a337, .container_d9be46, .columnsSpan_f369db {
-  background-color: #0B0A10
+.inputDefault__0f084,
+.container__9a337,
+.container_d9be46,
+.columnsSpan_f369db {
+  background-color: #0b0a10;
 }
-
 
 /* Extras beyond this point */
 
@@ -162,7 +159,7 @@
 /* #2c2e33 */
 #app-mount .background_c54132,
 #app-mount .container-3wLKDe {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 /* #36393f */
@@ -170,35 +167,46 @@
 #app-mount .perksModal-CLcR1c,
 #app-mount .pageWrapper_a3a4ce,
 #app-mount .tierMarkerBackground-G8FoN4 {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 /* #202225 */
 #app-mount .tierBody-3ju-rc {
-    background-color: var(--background-tertiary);
+  background-color: var(--background-tertiary);
 }
 
 /* #18191c */
 #app-mount .tierHeaderLocked-3ItHYn {
-    background-color: var(--background-floating);
+  background-color: var(--background-floating);
 }
 
 /* #2f3136 */
 #app-mount .autocomplete__13533,
 .categoryHeader_d1405b,
 #app-mount .perk-19D_HN {
-    background-color: var(--background-nested-floating);
+  background-color: var(--background-nested-floating);
 }
 
 #app-mount .headerBarInner_dc1a41:after {
-    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-primary));
+  background: linear-gradient(
+    90deg,
+    rgba(54, 57, 63, 0) 0,
+    var(--background-primary)
+  );
 }
 
 #app-mount .option__56fec:after {
-    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-floating));
+  background: linear-gradient(
+    90deg,
+    rgba(54, 57, 63, 0) 0,
+    var(--background-floating)
+  );
 }
 
 #app-mount .option__56fec:hover:after {
-    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-primary));
+  background: linear-gradient(
+    90deg,
+    rgba(54, 57, 63, 0) 0,
+    var(--background-primary)
+  );
 }
-
