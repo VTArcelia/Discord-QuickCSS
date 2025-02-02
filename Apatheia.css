@@ -11,11 +11,11 @@
 */
 
 /* Imports */
-
-@import url("https://maendisease.github.io/BetterDiscordStuff/css/BIRBanners.css"); /* do not remove this as I moved some other imports in the Ultra.css file, and I am too lazy to move this there too */
-@import url("https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css");
 /* Source */
 @import url("https://VTArcelia.github.io/Discord-QuickCSS/Ultra.css");
+/* Font Replacement */
+@import url("https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css");
+
 /* Main file that contains the theme */
 :root {
   --ap-radius-s: 4px;
@@ -152,4 +152,51 @@
   background-color: #0B0A10
 }
 
+
+/* Extras pass this point */
+
+/* touchups by TheCommieAxolotl */
+
+/* #2c2e33 */
+#app-mount .background_c54132,
+#app-mount .container-3wLKDe {
+    background-color: var(--background-primary);
+}
+
+/* #36393f */
+#app-mount .container__133bf,
+#app-mount .perksModal-CLcR1c,
+#app-mount .pageWrapper_a3a4ce,
+#app-mount .tierMarkerBackground-G8FoN4 {
+    background-color: var(--background-primary);
+}
+
+/* #202225 */
+#app-mount .tierBody-3ju-rc {
+    background-color: var(--background-tertiary);
+}
+
+/* #18191c */
+#app-mount .tierHeaderLocked-3ItHYn {
+    background-color: var(--background-floating);
+}
+
+/* #2f3136 */
+#app-mount .autocomplete__13533,
+.categoryHeader_d1405b,
+#app-mount .perk-19D_HN {
+    background-color: var(--background-nested-floating);
+}
+
+#app-mount .headerBarInner_dc1a41:after {
+    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-primary));
+}
+
+#app-mount .option__56fec:after {
+    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-floating));
+}
+
+#app-mount .option__56fec:hover:after {
+    background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-primary));
+}
 
