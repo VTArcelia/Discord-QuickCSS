@@ -8,3 +8,5 @@ Recommended to use on any of the following [Ez-Vencord-Install for dev edition w
 [fixicons.css is MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme)
 
 
+to do :
+fix apatheia's unaligned unread message indicator
