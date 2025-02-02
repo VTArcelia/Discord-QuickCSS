@@ -92,12 +92,12 @@
   --ap-size-text-item: 1em;
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
-  --ap-font-text: Atkinson Hyperlegible;
-  --ap-font-interface: Atkinson Hyperlegible;
-  --ap-font-monospace: Atkinson Hyperlegible;
-  --ap-font-title: Atkinson Hyperlegible;
-  --ap-font-header: Atkinson Hyperlegible;
-  --ap-font-hashtag: Atkinson Hyperlegible;
+  --ap-font-text: 'Atkinson Hyperlegible', sans-serif;
+  --ap-font-interface: 'Atkinson Hyperlegible', sans-serif;
+  --ap-font-monospace: 'Atkinson Hyperlegible', sans-serif;
+  --ap-font-title: 'Atkinson Hyperlegible', sans-serif;
+  --ap-font-header: 'Atkinson Hyperlegible', sans-serif;
+  --ap-font-hashtag: 'Atkinson Hyperlegible', sans-serif;
 }
 
 :root,
@@ -137,8 +137,8 @@
   --channels-default: var(--ap-color-dp9);
   --selected-indicator: var(--ap-red);
   --hover-indicator: var(--ap-primary);
-  --font: "Atkinson Hyperlegible";
-  --code-font: "Atkinson Hyperlegible";
+  --font: 'Atkinson Hyperlegible', sans-serif;
+  --code-font: 'Atkinson Hyperlegible', sans-serif;
   --boost-bar: none;
 }
 
@@ -153,7 +153,7 @@
 }
 
 
-/* Extras pass this point */
+/* Extras beyond this point */
 
 /* touchups by TheCommieAxolotl */
 
