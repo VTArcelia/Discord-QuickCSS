@@ -16,13 +16,7 @@
     border-bottom-right-radius: 5px;
 }
 
-rect.pointerEvents__44b0c {
-    stroke: var(--background-primary);
-    stroke-width: 2px;
-    mask: none;
-    ry: 4px;
-    rx: 4px;
-}
+
 
 .svg-2azL_l > svg > rect {
     mask: unset;
@@ -177,23 +171,13 @@ textarea {
     margin-bottom: 10px;
 }
 
-rect.pointerEvents__44b0c {
-    x: 22 !important;
-    y: 1 !important;
-    height: 10px;
-    width: 10px;
-}
+
 
 .mask-1FEkla circle {
     display: none;
 }
 
-.accountProfileCard__1fed1 rect.pointerEvents__44b0c {
-    x: 70 !important;
-    y: 1 !important;
-    height: 15px;
-    width: 15px;
-}
+
 
 .wrapper_d5f3cd {
     border: 3px solid var(--background-secondary);
@@ -226,9 +210,7 @@ rect.pointerEvents__44b0c {
     background-color: var(--background-primary) !important;
 }
 
-.wrapper-1VLyxH foreignObject:not(rect.pointerEvents__44b0c) {
-    mask: unset;
-}
+
 
 #app-mount .lowerBadge-3WTshO {
     border-radius: 20% !important;
@@ -461,9 +443,7 @@ h3.title-1_TkpU.fontDisplay-3Gtuks.base_eb1a4c.size24_a4e6b9,
     position: relative;
 }
 
-.autocompleteRowVertical__13533 rect.pointerEvents__44b0c {
-    x: 18 !important;
-}
+
 
 .overflow__82b15:not(.nameAndDecorators__20a53 .overflow__82b15) {
     text-transform: capitalize !important;
@@ -630,20 +610,8 @@ code {
     display: none;
 }
 
-.userPopoutOuter-3AVBmJ rect.pointerEvents__44b0c,
-.profilePanel-2PWEok rect.pointerEvents__44b0c {
-    x: 66 !important;
-    y: 66 !important;
-    height: 15px;
-    width: 15px;
-}
 
-.layer-1Ixpg3 rect.pointerEvents__44b0c {
-    x: 120 !important;
-    y: 100 !important;
-    height: 15px;
-    width: 15px;
-}
+
 
 .scroller-1bVxF5 {
     padding: 6px 8px !important;
@@ -724,5 +692,3 @@ code {
     border-radius: 38%;
     mask: unset;
 }
-
-
