@@ -7,42 +7,22 @@
  * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
-@import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
 @import url(https://VTArcelia.github.io/Discord-QuickCSS/fontreplacer.css);
 @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
 
 :root {
-  --background-image: url(https://i.postimg.cc/8D9RwVhV/1737834649201.png);
-  --background-image-blur: 1px;
-  --background-image-size: cover;
-  --background-image-position: center;
-  --popout-image: var(--background-image);
-  --popout-image-blur: 3px;
-  --popout-image-size: cover;
-  --popout-image-position: center;
-  --overlay-image: var(--background-image);
-  --overlay-image-blur: 3px;
-  --overlay-image-size: cover;
-  --overlay-image-position: center;
-  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
-  --home-button-size: cover;
-  --home-button-position: center;
-  --serverlist-brightness: 0.44;
-  --left-brightness: 0.5;
-  --middle-brightness: 0.56;
-  --right-brightness: 0.22;
-  --overlay-brightness: 0.8;
-  --gradient-primary: 181,68,200;
-  --gradient-secondary: 7,21,99;
-  --link-colour: #0FF0FA;
-  --scrollbar-colour: rgba(255,255,255,0.05);
-  --gradient-direction: 185deg;
-  --tint-colour: 255,51,159;
-  --tint-brightness: 0;
-  --font: 'Atkinson Hyperlegible';
-  --window-padding: 0px;
-  --window-roundness: 0px;
-  --update-notice-1: none;
+  --focus-color: rgb(15, 240, 250); 
+  --url-color: rgb(15, 240, 250);
+  --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+  --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+  --background-image: url(https://i.postimg.cc/q0zc876L/224390c925eb0d556d082f0c6d78a28f8ec27d51.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+  --background-contrast: 100%; /* app background contrast [default: 100%] */
+  --background-saturation: 100%; /* app background saturation [default: 100%] */
+  --background-blur: 0px; /* app background blur [default: 0px] */
+  --main-font: Atkinson Hyperlegible; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Atkinson Hyperlegible; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 }
 
-/* END OF THEME */
+/* End of Theme */
