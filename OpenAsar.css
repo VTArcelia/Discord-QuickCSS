@@ -7,7 +7,7 @@
  * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
-@import url(https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css);
+@import url(https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css); /* I like userpfp so it goes here */
 
 
 /* Anti Fake Play Video Button */
@@ -15,25 +15,6 @@ div[class="iconWrapper__6eb54"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
 
-/* unread channel indicators */
-.iconContainer__2ea32 {
-  width: 6px;
-  height: 6px;
-  margin-right: 10px !important;
-  margin-left: 8px !important;
-  margin: 0px;
-  border-radius: 100%;
-}
-/* Color for unread channel indicators */
-.unread__2ea32 {
-  background-color: #f188ff; 
-  width: 6px;
-  height: 6px;
-  top: 20px;
-  margin-left: 10px !important;
-  margin: 0px;
-  border-radius: 100%;
-}
 
 /* custom chat bar input text  */
 :root{
@@ -90,13 +71,10 @@ content: var(--prompt-text);
 /* Removes Separators (probably fucks settings page up but who really cares) */
 .separator_c1e9c4 {display: none !important;}
 
-/* Remove the goofy ass app launcher they just added */
+/* Remove the goofy ass app launcher since I never use it */
 .channelAppLauncher_e6e74f {display: none !important;}
 
-/* Remove Threads Popout from channel list */
-.popout__76f04 {display: none !important;}
-
-/* Remove Message Headers */
+/* Remove Message Headers because idc for -# # ## ### */
 div:is([class*=messageContent],[class*=embedDescription]) > :is(h1, h2, h3, small) {
   font-size: 100% !important;
   font-weight: inherit !important;
@@ -122,24 +100,11 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   content: "-# ";
 }
 
-
-/* Make Delete/Logout Buttons Red (requires theme attributes) */
-[class^=item_][data-tab-id="DELETE"],
-[class^=item_][data-tab-id="logout"] {
-    color: var(--info-danger-foreground) !important;
-}
-[class^=item_][data-tab-id="DELETE"]:hover,
-[class^=item_][data-tab-id="logout"]:hover {
-    background-color: var(--info-danger-background) !important;
-}
-
-
 /* Hide Activity in member list */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
 }
-
 [data-list-id="guildsnav"] [class^="footer"]:has(>[class^="gradient"]) {
   display: none;
 }
@@ -188,3 +153,20 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   z-index: 999;
   background: var(--bg-overlay-1, var(--background-secondary));
 }
+
+/* Flip the new chat bar from experiments */
+[class*="formWithLoadedChatInput"] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+[class*="formWithLoadedChatInput"] > [class*="typing_"] {
+  position: relative !important;
+}
+[class*="channelTextArea_f75fb0"] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Remove invisible typing icon from shelter */
+.KIS_7q_invisContainer {display: none !important;}
+.KIS_7q_notShowing {display: none !important;}
