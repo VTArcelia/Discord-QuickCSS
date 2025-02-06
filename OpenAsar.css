@@ -170,3 +170,17 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
 /* Remove invisible typing icon from shelter */
 .KIS_7q_invisContainer {display: none !important;}
 .KIS_7q_notShowing {display: none !important;}
+
+/* "Hover" server List mainly for new ui, on old just hides the icons until mouse over */
+[class*="guilds"] {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+[class*="guilds"]:hover {
+  opacity: 1;
+  transform: translateX(0);
+}
