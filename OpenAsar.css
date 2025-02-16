@@ -16,7 +16,7 @@ div[class="iconWrapper__6eb54"] {
 
 /* custom chat bar input text  */
 :root{
- --prompt-text: "Why are you looking at this text? You must be weird for noticing this has changed.";
+ --prompt-text: "Chatting.";
 }
 /* hide existing text */
 [class*=placeholder][class*=slateTextArea] {visibility: hidden;}
