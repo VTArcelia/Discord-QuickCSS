@@ -129,15 +129,6 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
     height: auto;
     aspect-ratio: var(--expression-picker-aspect-ratio);
 }
-/* Fixes soundmoji picker which has a hardcoded height */
-[class*="expressionPickerPositionLayer_"] [class*="soundboardContainer_"] [class*="picker_"] {
-    height: 100%;
-}
-
-/* left align all gif favorite icons */
-[class^=result_] [class^=favButton_] {
-    right: unset; 
-}
 
 /* Remove All emoji reactions */
 [class^=hoverBarButton_]:has(>div>.emoji) {
@@ -152,9 +143,6 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
   background: var(--bg-overlay-1, var(--background-secondary));
 }
 
-/* Remove invisible typing icon from shelter */
-.KIS_7q_invisContainer {display: none !important;}
-.KIS_7q_notShowing {display: none !important;}
 
 /* "Hover" server List mainly for new ui, on old just hides the icons until mouse over 
 [class*="guilds"] {
