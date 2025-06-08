@@ -7,12 +7,26 @@
  * @source https://github.com/VTArcelia/Discord-QuickCSS
 */
 
+/* Anti ClearVision Title (maybe breaks more) */
+[class^="info__"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+.visual-refresh:not(.platform-osx) [class^="leading_"]::before {
+  content: none !important;
+  display: none !important;
+}
+
+.visual-refresh:not(.platform-osx) [class^="leading_"]::after {
+  content: none !important;
+  display: none !important;
+}
 
 /* Anti Fake Play Video Button */
 div[class="iconWrapper__6eb54"] {
  background-color: rgba(172, 110, 253, 0.774) 
 }
-
 
 /* custom chat bar input text  */
 :root{
@@ -144,17 +158,113 @@ div:is([class*=messageContent],[class*=embedDescription]) > small::before {
 }
 
 
-/* "Hover" server List mainly for new ui, on old just hides the icons until mouse over 
-[class*="guilds"] {
-  opacity: 0;
-  transform: translateX(-25px);
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
+/* Remove the useless chonker bar at the top and combine stuff so it looks similar to pre ui changes */
+.visual-refresh {
+  --vr-header-snippet-top: 0px;
+  --vr-header-snippet-server-padding: 16px;
+  --vr-header-snippet-space: 230px;
+  --vr-header-snippet-button-padding: 0;
 
-[class*="guilds"]:hover {
-  opacity: 1;
-  transform: translateX(0);
+  div[class*="chat_"]:not([class*="threadSidebarOpen_"]) section[class*="container_"],
+  main[class*="container_"] section[class*="container_"],
+  div[class*="chatLayerWrapper_"] section[class*="container_"] {
+    padding-right: var(--vr-header-snippet-space);
+  }
+
+  div[class*="headerBar_"][class*="overlay_"] {
+    padding-right: var(--vr-header-snippet-space);
+
+    [class*="tab_"],
+    [class*="searchBar_"] {
+      -webkit-app-region: no-drag;
+    }
+  }
+
+  div[class*="videoControls_"] div[class*="subtitleContainer_"] {
+    padding-right: calc(var(--vr-header-snippet-space) - 20px);
+
+    [class*="toolbar_"] {
+      -webkit-app-region: no-drag;
+    }
+  }
+
+  div[class*="page_"] {
+    &:not(:has(> div[class*="chat_"])) {
+      anchor-name: --vr-header-snippet;
+    }
+
+    & > div[class*="chat_"] {
+      anchor-name: --vr-header-snippet;
+    }
+  }
+
+  div[class*="base_"] {
+    grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+    &:has(div[class*="bar_"] > div[class*="trailing_"] [class*="updateIconForeground_"]) {
+      & div[class*="chat_"],
+      & div[class*="subtitleContainer_"],
+      & main[class*="container_"],
+      & div[class*="chatLayerWrapper_"] {
+        & section[class*="container_"] {
+          padding-right: calc(var(--vr-header-snippet-space) + 50px);
+        }
+      }
+
+      & div[class*="videoControls_"] [class*="topControls_"] div[class*="toolbar_"] {
+        margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
+      }
+    }
+
+    & > div[class*="content_"] {
+      z-index: 0;
+    }
+
+    & > div[class*="bar_"] {
+      position: absolute;
+      position-anchor: --vr-header-snippet;
+      top: var(--vr-header-snippet-top);
+      right: anchor(right);
+      width: anchor-size(width);
+      padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+
+      & > [class*="title_"] {
+        display: none;
+      }
+    }
+
+    &:has(> [class*="notice_"]) {
+      & > div[class*="bar_"] {
+        top: anchor(top);
+      }
+    }
+
+    & div[class*="trailing_"] {
+      background: none;
+      border: none;
+      height: var(--custom-channel-header-height);
+    }
+
+    &:has([class*="threadSidebarOpen_"][class*="threadSidebarFloating_"]) > [class*="bar_"] {
+      z-index: 0;
+    }
+  }
+
+  :not(:has(div[class*="page_"] > div[class*="chat_"])) div[class*="base_"] > div[class*="bar_"] {
+    right: 0 !important;
+  }
+
+  ul[data-list-id="guildsnav"] > div[class*="itemsContainer_"] > div[class*="stack_"] {
+    margin-top: var(--vr-header-snippet-server-padding);
+  }
+
+  section[class*="header_"] [class*="toolbar_"],
+  section[class*="header_"] [class*="children_"],
+  :not([class*="videoControls_"]) div[class*="topic_"] {
+    -webkit-app-region: no-drag;
+  }
+
+  div[class*="videoControls_"] [class*="topControls_"] {
+    z-index: -1;
+  }
 }
-*/
