@@ -1,16 +1,21 @@
-Recommended to use on any of the following [Ez-Vencord-Install for dev edition with third party plugins pre-installed](https://github.com/VTArcelia/ez-vencord-install), [SheltUpdate for multi client loading](https://shelter.uwu.network/install), or [Vanilla Vencord](https://vencord.dev/)
+Recommended to use on any of the following [SheltUpdate for multi client loading (the preferred way in my opinion)](https://shelter.uwu.network/install), [Ez-Vencord-Install for dev edition vencord making it easy to install/add third party plugins](https://github.com/VTArcelia/ez-vencord-install) or [Vanilla Vencord](https://vencord.dev/)
 
 ------------------------
 
-[Use syndishare's theme fixer if you want old icons on MrDiamondDog's css](https://github.com/MrDiamondDog/noUglyIconsTheme)
+[Use syndishanx's theme fixer if you want to fix broken classes](https://syndishanx.github.io/Website/Update_Classes.html)
+
+this changes the classes of things that are broken to their latest if it exists, example if something was like `icon__23ae83` it would update that to `icon__47e34a` if it was the latest. it doesn't work unless it is stuff like that where you can actually see the class, aka the original css before it was made into something user friendly. Typically used on quickcss but you can use on actual themes if you get the original file to update them. 
 
 -------------------------
 
-To use put in your quickcss editor of choice,
+To use put the following in your quickcss editor of choice,
 ```
 @import (https://vtarcelia.github.io/Discord-QuickCSS/theme-of-choice.css);
+@import (https://vtarcelia.github.io/Discord-QuickCSS/theme-of-choice2.css);
 ```
-or if you are using an online theme importer such as vencord's specific tab
+
+or if you are using an online theme importer such as vencord's online theme tab
+
 ```
 https://vtarcelia.github.io/Discord-QuickCSS/theme-of-choice.css
 https://vtarcelia.github.io/Discord-QuickCSS/theme-of-choice2.css
