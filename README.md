@@ -61,3 +61,31 @@ This increases the font size from 13px to 16px, my preference is completely diff
 if the theme has an import in it already for example font replacer has the atkinson hyperlegible font, you cant remove it, but you can also just @import whatever font you want, and then change all of the font settings inside of the root to use your own font.
 
 I suggest using fonts.bunny.net over google fonts, but you are free to use anything you want. 
+
+
+
+
+
+
+
+# Setup
+Using SheltUpdate for Shelter with the following Plugins
+
+- anonymize file names by Amy
+- Better Screenshare Quality Fix by Xirreal
+- Antitrack by Yellowsink
+- No Dev Tools Detection by Yellowsink
+- QuickReply by Yellowsink
+- Text Replacements by Yellowsink (x.com link to stupidpenisx and youtube.com/watch?v= to youtu.be/)
+- No F1 by ErogeMaster225
+- Notification Volume by ioj4 (20% volume)
+- Open Profile Images by ioj4
+- Orbolay Bridge by SpikeHD (with orbolay obviously)
+- Invisible Typing by SpikeHD (my version without the toggle so it's just forced on)
+
+The following theme + my Openasar.css
+
+https://refact0r.github.io/system24/build/system24.css
+
+You can find everything needed for my setup at https://shelter.uwu.network/ & theme's at whatever the fuck betterdiscord's site is
+
