@@ -10,8 +10,8 @@ this changes the classes of things that are broken to their latest if it exists,
 
 To use put the following in your quickcss editor of choice,
 ```
-@import (https://vtarcelia.github.io/Discord-QuickCSS/OpenAsar.css);
-@import (https://vtarcelia.github.io/Discord-QuickCSS/fontreplacer.css);
+@import url(https://vtarcelia.github.io/Discord-QuickCSS/OpenAsar.css);
+@import url(https://vtarcelia.github.io/Discord-QuickCSS/fontreplacer.css);
 ```
 
 or if you are using an online theme importer such as vencord's online theme tab
